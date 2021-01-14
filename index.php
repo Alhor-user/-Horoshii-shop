@@ -1,13 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-
+    <?php require_once("head.php") ?>
 </head>
 <body>
     <nav class="uk-navbar-container" uk-navbar style="height: 160px;">
