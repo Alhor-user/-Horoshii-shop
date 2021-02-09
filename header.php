@@ -1,11 +1,11 @@
 <nav class="uk-navbar-container" uk-navbar style="height: 120px;">
     
-    <div class="uk-flex">
+    <div class="uk-flex uk-flex-between">
         <div>
             <p>Logo</p>
         </div>
 
-        <div class="uk-flex uk-flex-column">
+        <div class="uk-flex-column">
             <div>
             </div>
             
