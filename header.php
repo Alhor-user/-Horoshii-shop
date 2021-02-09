@@ -1,6 +1,28 @@
 <nav class="uk-navbar-container" uk-navbar style="height: 120px;">
     
-    <div class="uk-flex uk-flex-between">
+    <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
+    <div class="uk-width-1-4" style="background-color: red;">
+        <p>Logo</p>
+    </div>
+
+
+    <div>
+        <div uk-grid class="uk-width-1-1 uk-height-1-1 uk-grid-collapse uk-child-width-expand">
+            <div class="uk-width-1-1 uk-height-1-2" style="background-color: grey;">
+                <p>Logo</p>
+            </div>
+            <div class="uk-width-1-1 uk-height-1-2" style="background-color: black;">
+                <p>Logo</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-width-1-4" style="background-color: green;">
+        <p>Logo</p>
+    </div>
+    
+    
+    <!-- <div class="uk-flex">
         <div>
             <p>Logo</p>
         </div>
@@ -32,6 +54,6 @@
         <div>
             <p>Phone</p>
         </div>
-    </div>
+    </div> -->
 
 </nav>
