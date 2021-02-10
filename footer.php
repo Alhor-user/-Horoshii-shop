@@ -1,7 +1,7 @@
 <footer class="uk-section uk-section-secondary uk-section-xsmall" style="background-image: url(img/header-wave2.jpg); background-size: 100%">
   <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
         <div class="uk-width-1-4">
-            <img src="/img/logo.png" alt="Logo" style="width: 250px; height: 100px; margin: 0 0 0 25px;">
+            <img src="/img/logo.png" alt="Logo" class="img-logo" style="margin: 0 0 0 25px;">
         </div>
         <div class="uk-width-1-2 uk-height-1-1">
             <a><p style="margin: 0 25px 5px 0; text-align: center; color: #F5F4F5; font-size: 1.2rem; font-weight: 500;">Вкусные рецепты</p></a>
