@@ -2,7 +2,7 @@
     
     <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
         <div class="uk-width-1-4">
-            <img src="/img/logo.png" alt="Logo" style="width: 70%; height: 70%; margin: 25px 0 0 25px;">
+            <img src="/img/logo.png" alt="Logo" style="width: 250px; height: 100px; margin: 25px 0 0 25px;">
         </div>
 
 
