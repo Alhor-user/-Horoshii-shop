@@ -1,12 +1,12 @@
-<?php require_once("config/db_config.php"); ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <?php require_once("head.php"); ?>
-</head>
-<body style="background-color: #f7f7f7; max-height: 800px;">
-    <?php require_once("header.php"); ?>
-    <?php require_once("content.php"); ?>
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php
+$uri = $_SERVER['REQUEST_URI'];
+
+if($uri === '/')
+    require 'pages/index.php';
+elseif($uri === '/index.html')
+    require 'pages/index.php';
+elseif($uri === '/about')
+    require 'pages/about.php';
+else
+    require 'pages/error404.php';
+?>
