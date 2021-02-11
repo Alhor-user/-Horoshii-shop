@@ -8,5 +8,5 @@ elseif($uri === '/index.html')
 elseif($uri === '/about')
     require 'pages/about.php';
 else
-    require 'pages/error404.php';
+    require 'pages/404.html';
 ?>
