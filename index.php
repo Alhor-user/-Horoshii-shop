@@ -10,6 +10,8 @@ if($uri === '/')
     require 'pages/index.php';
 elseif($uri === '/about')
     require 'pages/about.php';
+elseif($uri === '/catalog/ikra')
+    require 'pages/category.php?c=ikra';
 else
     require 'pages/404.html';
 ?>
