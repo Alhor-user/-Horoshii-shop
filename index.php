@@ -4,8 +4,6 @@ $segments = explode('/', trim($uri, '/'));
 
 if($uri === '/')
     require 'pages/index.php';
-elseif($uri === '/index.html')
-    require 'pages/index.php';
 elseif($uri === '/about')
     require 'pages/about.php';
 else

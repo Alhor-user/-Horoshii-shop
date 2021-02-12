@@ -1,8 +1,8 @@
-<nav class="uk-navbar-container" uk-navbar style="height: 150px; background-image: url(img/header-wave2.jpg); background-size: 100%;">
+<nav class="uk-navbar-container" uk-navbar style="height: 150px; background-image: url(../img/header-wave2.jpg); background-size: 100%;">
     
     <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
         <div class="uk-width-1-4">
-            <img src="/img/logo.png" alt="Logo" class="img-logo" style="margin: 25px 0 0 25px;">
+            <img src="../img/logo.png" alt="Logo" class="img-logo" style="margin: 25px 0 0 25px;">
         </div>
 
 
