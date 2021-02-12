@@ -1,4 +1,8 @@
 <?php
+// Подключаем бд
+require_once("config/db_config.php");
+
+// Роутим страницы по URI
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $segments = explode('/', trim($uri, '/'));
 
