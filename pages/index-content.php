@@ -7,14 +7,16 @@
         <div class="uk-grid-column-small uk-grid-row-small uk-text-center uk-flex-center" uk-grid style="margin: 0;">
             <!-- карта №1 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                <a href="/catalog/ikra">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
+                                <p>Икра</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- карта №2 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
