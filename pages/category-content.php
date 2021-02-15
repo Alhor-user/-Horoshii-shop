@@ -1,3 +1,3 @@
 <?php
-    echo 'Привет, ' . htmlspecialchars($_GET["c"]) . '!';
+    echo 'Привет, ' . $category . '!';
 ?>
