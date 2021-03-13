@@ -17,7 +17,7 @@ if($uri === '/')
     require 'pages/index.php';
 elseif($uri === '/about')
     require 'pages/about.php';
-elseif($uri === '/catalog/ikra') 
+elseif(($uri === '/catalog/ikra')||($uri === '/catalog/river-fish')||($uri === '/catalog/sea-fish')||($uri === '/catalog/salt-fish')) 
 {
     $category = $segments[1];
     require 'pages/category.php';

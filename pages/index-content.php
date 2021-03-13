@@ -20,36 +20,42 @@
             </div>
             <!-- карта №2 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../img/rechnaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Речная рыба</p>
+                <a href="/catalog/river-fish">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="../img/rechnaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
+                                <p>Речная рыба</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- карта №3 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../img/morskaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Морская рыба</p>
+                <a href="/catalog/sea-fish">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="../img/morskaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
+                                <p>Морская рыба</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- карта №4 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../img/solenaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
-                        <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Солёная рыба</p>
+                <a href="/catalog/salt-fish">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="../img/solenaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
+                                <p>Солёная рыба</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- карта №5 -->
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
