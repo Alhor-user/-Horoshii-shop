@@ -20,7 +20,7 @@
                     <input class="uk-input" type="password" name="pass">
                 </div>
             </div>
-            <button class="uk-button uk-button-primary" type="submit">Вход</button>
+            <button class="uk-button uk-button-primary" type="submit" name="sumbit">Вход</button>
         </form>
     </div>
 
