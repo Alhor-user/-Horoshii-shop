@@ -20,7 +20,7 @@
                 //print("Название: " . $row['Name'] . "; Категория: . " . $row['Category'] . "<br>");
                 echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                     <a>
-                        <div class="uk-card uk-card-default" style="box-shadow:;">
+                        <div class="uk-card uk-card-default" style="box-shadow: none;">
                             <div class="uk-card-media-top">
                                 <img src="../img/', $row['Image'], '" alt="" class="category-card" style="height: auto;">
                             </div>
