@@ -11,6 +11,16 @@
                 // echo $_SESSION["key"];
                 // echo hash('md5', $_SESSION["login"]);
                 echo session_status();
+
+
+                if ( version_compare(phpversion(), '5.4.0', '>=') ) {
+                    return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
+                } else {
+                    return session_id() === '' ? FALSE : TRUE;
+                }
+
+
+
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
                     echo "Работает!!!";
                 };
