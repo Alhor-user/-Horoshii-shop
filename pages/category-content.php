@@ -22,7 +22,7 @@
                     <a>
                         <div class="uk-card uk-card-default">
                             <div class="uk-card-media-top">
-                                <img src="../img/', $row['Image'], '" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                                <img src="../img/', $row['Image'], '" alt="" class="category-card">
                                 <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
                                     <p>', $row['Name'], '</p>
                                 </div>
