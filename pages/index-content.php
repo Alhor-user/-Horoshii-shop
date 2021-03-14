@@ -7,13 +7,12 @@
         <div class="uk-grid-column-small uk-grid-row-small uk-text-center uk-flex-center" uk-grid style="margin: 0;">
                 
             <?php // Добавление карточек с категориями из БД
-                // echo $_SESSION["login"];
-                // echo $_SESSION["key"];
-                // echo hash('md5', $_SESSION["login"]);
 
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                    echo "Работает!!!";
-                };
+                //Проверка работы сессии
+                // if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
+                //     echo "Работает!!!";
+                // };
+
                 $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
                 $result = mysqli_query($link, $sql);
                 while ($row = mysqli_fetch_array($result)) {
