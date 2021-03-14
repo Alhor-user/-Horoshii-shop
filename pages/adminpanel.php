@@ -1,7 +1,7 @@
-<?php require_once("../config/db_config.php"); ?>
-
-
 <?php 
+    session_start();
+    require_once("../config/db_config.php"); 
+
     //Проверяем, что юзер нажал на кнопку Вход
     if ($_POST['sumbit'] == 'true') {
         $passhash = hash('md5', hash('md5', $_POST['pass']));
@@ -11,7 +11,8 @@
         $row = mysqli_fetch_array($result);
         //Если такого юзера нет - ошибка, иначе - открываем сессию и редиректим на главную
         if ($row['Login'] <> '') {
-            session_start();
+            $_SESSION["login"] = $row['Login'];
+            $_SESSION["key"] = $row['Session_key'];
         } else echo "ERROR";
     }
 
