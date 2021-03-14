@@ -10,6 +10,7 @@
                 echo $_SESSION["login"];
                 echo $_SESSION["key"];
                 echo hash('md5', $_SESSION["login"]);
+                echo session_status();
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
                     echo "Работает!!!";
                 };
