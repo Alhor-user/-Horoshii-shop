@@ -1,7 +1,7 @@
 <footer class="uk-section uk-section-secondary uk-section-xsmall" style="background-image: url(../img/header-wave2.jpg); background-size: 100%;">
   <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
         <div class="uk-width-1-4">
-            <a href="../index.php"><img src="../img/logo.png" alt="Logo" class="img-logo" style="margin: 0 0 0 25px;"></a>
+            <a href="../"><img src="../img/logo.png" alt="Logo" class="img-logo" style="margin: 0 0 0 25px;"></a>
         </div>
         <div class="uk-width-1-2 uk-height-1-1">
             <a><p class="footer-menu-text" style="margin: 0 25px 5px 0;">Вкусные рецепты</p></a>
