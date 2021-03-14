@@ -24,7 +24,7 @@
                             <div class="uk-card-media-top">
                                 <img src="../img/', $row['Image'], '" alt="" class="category-card">
                             </div>
-                            <div class="uk-card-body">
+                            <div class="uk-card-body uk-padding-small">
                                 <a class="uk-card-title">', $row['Name'], '</a>
                                 <p style="max-width:;">Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
                             </div>
