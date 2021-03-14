@@ -28,7 +28,7 @@
         echo "<pre>";
         print_r($_POST);
         echo "</pre>";
-        echo hash('md5', hash('md5', $_POST[pass]));
+        echo hash('md5', hash('md5', $_POST['pass']));
     ?>
 
 </body>
