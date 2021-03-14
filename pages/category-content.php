@@ -8,7 +8,7 @@
 
 <div uk-grid class="uk-grid-collapse">
 
-    <div class="uk-width-1-1" style="height: 100px;">
+    <div class="uk-width-1-1" style="height: 50px;">
     </div>
 
     <div class="uk-width-1-1" style="margin: 0 10vw;">
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <div class="uk-width-1-1" style="height: 100px;">
+    <div class="uk-width-1-1" style="height: 50px;">
     </div>
 
 </div>
