@@ -7,9 +7,9 @@
         <div class="uk-grid-column-small uk-grid-row-small uk-text-center uk-flex-center" uk-grid style="margin: 0;">
                 
             <?php // Добавление карточек с категориями из БД
-                echo $_SESSION["login"];
-                echo $_SESSION["key"];
-                echo hash('md5', $_SESSION["login"]);
+                // echo $_SESSION["login"];
+                // echo $_SESSION["key"];
+                // echo hash('md5', $_SESSION["login"]);
                 echo session_status();
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
                     echo "Работает!!!";
