@@ -32,6 +32,19 @@
                 </div>';
             }; ?>
 
+            <!-- Мусор, тестовая карточка для разбора -->
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="images/light.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
