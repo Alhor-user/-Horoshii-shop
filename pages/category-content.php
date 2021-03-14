@@ -20,13 +20,13 @@
                 //print("Название: " . $row['Name'] . "; Категория: . " . $row['Category'] . "<br>");
                 echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                     <a>
-                        <div class="uk-card uk-card-default">
+                        <div class="uk-card uk-card-default" style="height: 26vw;">
                             <div class="uk-card-media-top">
                                 <img src="../img/', $row['Image'], '" alt="" class="category-card" style="height: auto;">
                             </div>
                             <div class="uk-card-body uk-padding-small">
                                 <a class="uk-card-title">', $row['Name'], '</a>
-                                <p class="uk-margin-small-top" style="-webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto;">', $row['Description'], '</p>
+                                <p class="uk-margin-small-top">', $row['Description'], '</p>
                             </div>
                         </div>
                     </a>
