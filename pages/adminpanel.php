@@ -4,15 +4,20 @@
 </head>
 <body style="background-color: #f7f7f7;">
     
-    <div class="uk-align-center">
+    <div class="uk-align-center" >
         <form>
-            <div class="uk-inline">
-                <span class="uk-form-icon" uk-icon="icon: user"></span>
-                <input class="uk-input" type="text">
+            <div class="uk-margin">
+                <div class="uk-flex-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" type="text">
+                </div>
             </div>
-            <div class="uk-inline">
-                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                <input class="uk-input" type="text">
+
+            <div class="uk-margin">
+                <div class="uk-flex-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="text">
+                </div>
             </div>
         </form>
     </div>
