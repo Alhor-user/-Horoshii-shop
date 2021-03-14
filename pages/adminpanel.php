@@ -39,6 +39,9 @@
         echo "<pre>";
         print_r($_POST);
         echo "</pre>";
+        echo "<pre>";
+        print_r($row);
+        echo "</pre>";
         echo hash('md5', hash('md5', $_POST['pass']));
     ?>
 
