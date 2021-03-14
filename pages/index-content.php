@@ -61,9 +61,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
@@ -72,9 +72,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
@@ -83,9 +83,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
@@ -94,9 +94,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
@@ -105,9 +105,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
@@ -116,9 +116,9 @@
             <div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                        <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Икра</p>
+                            <p>Default</p>
                         </div>
                     </div>
                 </div>
