@@ -26,7 +26,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <a class="uk-card-title">', $row['Name'], '</a>
-                                
+                                <p style="max-width: 100px;">Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
                             </div>
                         </div>
                     </a>
