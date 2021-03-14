@@ -12,7 +12,7 @@
     </div>
 
     <div class="uk-width-1-1" style="margin: 0 10vw;">
-        <div class="uk-grid-column-small uk-grid-row-small uk-text-center uk-flex-center" uk-grid style="margin: 0;">
+        <div class="uk-grid-column-small uk-grid-row-small uk-text-center uk-flex-center uk-child-width-1-5@m" uk-grid style="margin: 0;">
 
 
             <?php
@@ -26,7 +26,7 @@
                             </div>
                             <div class="uk-card-body">
                                 <a class="uk-card-title">', $row['Name'], '</a>
-                                <p style="max-width: 100px;">Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
+                                <p style="max-width:;">Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
                             </div>
                         </div>
                     </a>
