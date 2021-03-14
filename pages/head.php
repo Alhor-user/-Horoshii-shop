@@ -1,5 +1,5 @@
-<title>"Хороший" магазин</title>
-<meta charset="utf-8"
+<title>Магазин "Хороший" - рыба и морепродукты в Бердске</title>
+<meta charset="utf-8" />
 <meta name="yandex-verification" content="fcbc808a44ad5f08" />
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <link rel="stylesheet" href="../css/uikit.min.css" />

@@ -21,10 +21,22 @@
                                     <a href="#" class="header-menu-h1-text">Продукция</a>
                                     <div class="uk-navbar-dropdown" style="box-shadow: none; background-color: #27698f; padding: 0;" uk-dropdown="offset: 0; padding: 0;">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">Морская рыба</a></li>
+
+
+                                        <?php // Добавление в выпадающее меню категорий из БД
+                                            $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
+                                            $result = mysqli_query($link, $sql);
+                                            while ($row = mysqli_fetch_array($result)) {
+                                                echo '<li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">', $row['Name'], '</a></li>';
+                                            }; 
+                                        ?>
+
+
+
+                                            <!-- <li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">Морская рыба</a></li>
                                             <li><a href="#" style="font-size: 1rem; padding:7px 25px 7px 25px;">Речная рыба</a></li>
                                             <li><a href="#" style="font-size: .95rem; padding:7px 25px 7px 25px;">Замороженная рыба</a></li>
-                                            <li><a href="#" style="font-size: .95rem; padding:7px 25px 20px 25px;">Охлажденная рыба</a></li>
+                                            <li><a href="#" style="font-size: .95rem; padding:7px 25px 20px 25px;">Охлажденная рыба</a></li> -->
                                         </ul>
                                     </div>
                                 </li>
