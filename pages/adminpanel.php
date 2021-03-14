@@ -25,6 +25,16 @@
     </div>
 
     <?php 
+        if ($_POST['sumbit'] = 'true') {
+            $passhash = hash('md5', hash('md5', $_POST['pass']));
+            $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "'";
+            $result = mysqli_query($link, $sql);
+            $row = mysqli_fetch_array($result);
+            if ($row['Name'] <> '') {
+                echo $row['Name'];
+            } else echo "ERROR";
+        }
+
         echo "<pre>";
         print_r($_POST);
         echo "</pre>";
@@ -32,4 +42,4 @@
     ?>
 
 </body>
-</html>
+</html> 
