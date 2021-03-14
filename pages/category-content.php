@@ -20,12 +20,12 @@
                 if ($row['Category'] == $category){
                     //print("Название: " . $row['Name'] . "; Категория: . " . $row['Category'] . "<br>");
                     echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                        <a href="/catalog/ikra">
+                        <a>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                                     <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                        <p>Икра</p>
+                                        <p>', $row['Name'], '</p>
                                     </div>
                                 </div>
                             </div>
