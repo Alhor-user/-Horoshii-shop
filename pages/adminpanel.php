@@ -15,16 +15,8 @@
             //Так как потенциальному злоумышленику неизвестен принцип получения ключа, подделать его он не сможет
             $_SESSION["login"] = $row['Login'];
             $_SESSION["key"] = $row['Session_key'];
-        } else echo "ERROR";
+        } else echo '<h2 style="text-align: center; padding-top:100px;">Ошибка авторизации (неправильный логин или  пароль)</p>';
     }
-
-    echo "<pre>";
-    print_r($_POST);
-    echo "</pre>";
-    echo "<pre>";
-    print_r($row);
-    echo "</pre>";
-    echo hash('md5', hash('md5', $_POST['pass']));
 ?>
 
 
