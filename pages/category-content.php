@@ -1,5 +1,5 @@
 <?php
-    echo 'Привет, ' . $category . '! <br>';
+    //echo 'Привет, ' . $category . '! <br>';
     $sql = "SELECT * FROM `production` WHERE `Category`='" . $category . "'";
     $result = mysqli_query($link, $sql);
 ?>
