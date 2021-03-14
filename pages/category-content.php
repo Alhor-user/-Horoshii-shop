@@ -26,7 +26,7 @@
                             </div>
                             <div class="uk-card-body uk-padding-small">
                                 <a class="uk-card-title">', $row['Name'], '</a>
-                                <p class="uk-margin-small-top">', $row['Description'], '</p>
+                                <p class="uk-margin-small-top" style="-webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto;">', $row['Description'], '</p>
                             </div>
                         </div>
                     </a>

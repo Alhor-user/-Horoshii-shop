@@ -1,6 +1,6 @@
 <?php require_once("config/db_config.php"); ?>
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <?php require_once("head.php"); ?>
 </head>
