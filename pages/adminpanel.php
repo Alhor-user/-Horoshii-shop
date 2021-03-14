@@ -27,7 +27,7 @@
 <body style="background-color: #f7f7f7;">
     
     <div class="uk-align-center" style="width:226px;"> <!-- Магическое число, 226 - это ширина полей ввода данных -->
-        <form style="padding-top: 200px;" id="auth" method="post">
+        <form style="padding-top: 200px; position: absolute;" id="auth" method="post">
             <h3 style="text-align: center;">Авторизация</p>
             <div class="uk-margin">
                 <div class="uk-inline">
