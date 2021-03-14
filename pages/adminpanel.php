@@ -26,7 +26,7 @@
     </div>
 
     <?php 
-        if ($_POST['sumbit'] = 'true') {
+        if ($_POST['sumbit'] == 'true') {
             $passhash = hash('md5', hash('md5', $_POST['pass']));
             $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "'";
             $result = mysqli_query($link, $sql);
