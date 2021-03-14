@@ -12,7 +12,7 @@
                         <div class="uk-card-media-top">
                             <img src="../img/ikra.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                <p>Икра</p>
+                                <a>Икра</a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                         <div class="uk-card-media-top">
                             <img src="../img/rechnaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                <p>Речная рыба</p>
+                                <a>Речная рыба</a>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="uk-card-media-top">
                             <img src="../img/morskaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                <p>Морская рыба</p>
+                                <a>Морская рыба</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div class="uk-card-media-top">
                             <img src="../img/solenaya-riba.jpg" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                <p>Солёная рыба</p>
+                                <a>Солёная рыба</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                     <div class="uk-card-media-top">
                         <img src="../img/noimage.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
                         <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                            <p>Default</p>
+                            <a>Default</a>
                         </div>
                     </div>
                 </div>

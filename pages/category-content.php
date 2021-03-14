@@ -23,9 +23,15 @@
                         <div class="uk-card uk-card-default">
                             <div class="uk-card-media-top">
                                 <img src="../img/', $row['Image'], '" alt="" class="category-card">
-                                <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
-                                    <p>', $row['Name'], '</p>
-                                </div>
+                                
+                                // <div class="uk-overlay uk-overlay-primary uk-position-bottom category-card-text">
+                                //     <a>', $row['Name'], '</a>
+                                // </div>
+
+                            </div>
+                            <div class="uk-card-body">
+                                <a class="uk-card-title">', $row['Name'], '</a>
+                                <p>Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
                             </div>
                         </div>
                     </a>
@@ -33,7 +39,7 @@
             }; ?>
 
             <!-- Мусор, тестовая карточка для разбора -->
-            <div>
+            <!-- <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/light.jpg" alt="">
@@ -43,7 +49,7 @@
                         <p>Системы неслыханно быстрые ошибаются неслыханно быстро.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
