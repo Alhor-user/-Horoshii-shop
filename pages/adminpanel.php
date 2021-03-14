@@ -1,3 +1,4 @@
+<?php require_once("config/db_config.php"); ?>
 <html lang="ru">
 <head>
     <?php require_once("head.php"); ?>
