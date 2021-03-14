@@ -4,7 +4,7 @@
 </head>
 <body style="background-color: #f7f7f7;">
     
-    <div class="uk-align-center" style="width:50%;">
+    <div class="uk-align-center" style="width:226px;">
         <form>
             <div class="uk-margin">
                 <div class="uk-inline">
