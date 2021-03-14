@@ -11,7 +11,7 @@
             <div class="uk-margin">
                 <div class="uk-inline">
                     <span class="uk-form-icon" uk-icon="icon: user"></span>
-                    <input class="uk-input" type="text" name="login">
+                    <input class="uk-input" type="text" name="Login">
                 </div>
             </div>
 
@@ -28,11 +28,11 @@
     <?php 
         if ($_POST['sumbit'] == 'true') {
             $passhash = hash('md5', hash('md5', $_POST['pass']));
-            $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "'";
+            $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "' AND `Login`='" . $_POST['Login'] . "'";
             $result = mysqli_query($link, $sql);
             $row = mysqli_fetch_array($result);
-            if ($row['Name'] <> '') {
-                echo $row['Name'];
+            if ($row['Login'] <> '') {
+                echo $row['Login'];
             } else echo "ERROR";
         }
 
