@@ -1,4 +1,5 @@
 <?php
+    session_start();
 // Подключаем бд
     require_once("config/db_config.php");
 
