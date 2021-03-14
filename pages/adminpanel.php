@@ -20,6 +20,7 @@
                     <input class="uk-input" type="text">
                 </div>
             </div>
+            <button class="uk-button uk-button-default">Отправить</button>
         </form>
     </div>
 
