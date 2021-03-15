@@ -41,7 +41,7 @@
             if (mysqli_num_rows($result)>0) {
                 $sql = "UPDATE `categories` SET `Category`='". $_POST['newcategory'] ."', `Name`='". $_POST['newname'] ."', `Image`='". $imgsrc ."' WHERE `Category`='". $_POST['oldcategory'] ."'";
                 echo $sql;
-                //$result = mysqli_query($link, $sql);
+                $result = mysqli_query($link, $sql);
 
                 if ($result == false) {
                     print("Произошла ошибка при выполнении запроса");
