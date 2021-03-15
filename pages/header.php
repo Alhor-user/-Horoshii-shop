@@ -136,23 +136,3 @@
         </div>
     </div>
 </nav>
-
-
-
-        <form style="top: 200px; position: absolute;" id="edit-text" method="post">
-            <h3 style="text-align: center;">Авторизация</p>
-            <div class="uk-margin">
-                <div class="uk-inline">
-                    <span class="uk-form-icon" uk-icon="icon: user"></span>
-                    <input class="uk-input" type="text" name="Login">
-                </div>
-            </div>
-
-            <div class="uk-margin">
-                <div class="uk-inline">
-                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                    <input class="uk-input" type="password" name="pass">
-                </div>
-            </div>
-            <button class="uk-button uk-button-primary" type="submit" name="sumbit" value="true">Вход</button>
-        </form>
