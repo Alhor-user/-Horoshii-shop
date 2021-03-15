@@ -151,7 +151,7 @@
                     <div class="uk-modal-dialog uk-modal-body">
                     <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
-                    <input name="picture" type="file" />
+                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" />
                     <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
                     <p class="uk-text-center uk-margin-medium-top">
