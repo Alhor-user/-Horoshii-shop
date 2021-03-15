@@ -48,6 +48,6 @@
 <script>
 function Edit(category) {
 	document.getElementById('deleteCategoryCategory').setAttribute('value', category);
-    
+    console.log(category);
 }
 </script>
