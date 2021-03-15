@@ -50,21 +50,24 @@
                 echo '<p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
                 $result = mysqli_query($link, $sql);
-                echo mysqli_fetch_array($result['Content']);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
 
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
                 $result = mysqli_query($link, $sql);
-                echo mysqli_fetch_array($result['Content']);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
 
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 25px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='3'";
                 $result = mysqli_query($link, $sql);
-                echo mysqli_fetch_array($result['Content']);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
             ?>
