@@ -171,9 +171,9 @@
 
 
 
-                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Имя категории (отображается на сайте):<i class="fa fa-info-circle fa-lg" style="color: black;"></i></p>
+                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;"><div uk-tooltip="Я подсказка">Имя отображается на сайте, например "Икра"</div></i> Имя категории:</p>
                     <input id="editCategoryName" class="uk-input" style="text-align: center;" value="">
-                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Название категории (отображается в адресной строке, английский):<i class="fa fa-info-circle fa-lg" style="color: black;"></i></p>
+                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;"><div uk-tooltip="Я подсказка">Категория отображается в адресной строке и должна быть написана на английском, например "ikra"</div></i> Название категории:</p>
                     <input id="editCategoryCategory" class="uk-input" style="text-align: center;" value="">
                     <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
