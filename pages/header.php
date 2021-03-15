@@ -172,13 +172,13 @@
 
 
                     <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
-                    <input id="editCategoryName" class="uk-input" style="text-align: center;" value="">
+                    <input id="editCategoryName" class="uk-input" placeholder="">
                     <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
-                    <input id="editCategoryCategory" class="uk-input" style="text-align: center;" value="">
+                    <input id="editCategoryCategory" class="uk-input" placeholder="">
                     <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                    <button id="123323" class="uk-button uk-button-primary" type="submit" name="category" value="">Сохранить</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="category">Сохранить</button>
                     </p>
                     </form>
                     </div>

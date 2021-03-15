@@ -48,9 +48,16 @@
 
 
 <script>
-function Edit(category, name) {
+function Delete(category, name) {
 	document.getElementById('deleteCategoryCategory').setAttribute('value', category);
     document.getElementById('deleteCategoryName').setAttribute('value', name);
+}
+</script>
+
+<script>
+function Edit(category, name) {
+	document.getElementById('editCategoryCategory').setAttribute('placeholder', category);
+    document.getElementById('editCategoryName').setAttribute('placeholder', name);
 }
 </script>
 
