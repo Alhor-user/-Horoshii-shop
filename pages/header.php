@@ -158,9 +158,9 @@
 
 
 
-                    <div class="container">
+                    <div class="container uk-margin-medium-top">
                         <div class="row">
-                            <label class="uk-margin-medium-top">Картинка категории (будет сжата до квадратной):</label><br>
+                            <label>Картинка категории (будет сжата до квадратной):</label><br>
                             <input class="uk-margin-small-top" type="file" id="file" name="file" />
                         </div>
                         <div class="row">
