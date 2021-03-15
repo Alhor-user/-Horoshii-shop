@@ -34,7 +34,7 @@
             
 
             // Ищем категории с таким же названием 
-            $sql = "SELECT * FROM `categories` WHERE `Category`=\'". $_POST['oldcategory'] ."\'";
+            $sql = "SELECT * FROM `categories` WHERE `Category`='". $_POST['oldcategory'] ."'";
             $result = mysqli_query($link, $sql);
 
             echo $sql;
@@ -45,7 +45,7 @@
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result)>0) {
-                $sql = "UPDATE `categories` SET `Category`=\'". $_POST['newcategory'] ."\' AND `Name`=\'". $_POST['newname'] ."\' AND `Image`=\'". $imgsrc ."\' WHERE `Category`=\'". $_POST['oldcategory'] ."\'";
+                $sql = "UPDATE `categories` SET `Category`='". $_POST['newcategory'] ."' AND `Name`='". $_POST['newname'] ."' AND `Image`='". $imgsrc ."' WHERE `Category`='". $_POST['oldcategory'] ."'";
                 $result = mysqli_query($link, $sql);
 
                 if ($result == false) {
