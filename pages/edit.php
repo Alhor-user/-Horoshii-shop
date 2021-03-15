@@ -4,8 +4,7 @@
         require_once("../config/db_config.php");
         
         if ($_POST['type']='content'){
-            $text = $_POST['text'];
-            $string = mysqli_real_escape_string($text);
+            $string = mysqli_real_escape_string($link, $_POST['text']);
             $sql = "UPDATE `content` SET `Content` = ". $string ." WHERE `ID`= ". $_POST['id'];
             $result = mysqli_query($link, $sql);
 
