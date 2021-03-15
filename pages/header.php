@@ -79,20 +79,16 @@
                 <form>
 
                     <h2 class="uk-modal-title">Изменение строки</h2>
-                    <input class="uk-input" type="text" value="
-                    
-                    
-                    
-                    <?php 
+                    <input class="uk-input" type="text" value="<?php 
+
+
                         $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
                         $result = mysqli_query($link, $sql);
                         $data = mysqli_fetch_array($result);
                         echo $data['Content'];
-                    ?>">
 
 
-
-                    <p class="uk-text-center">
+                    ?>"><p class="uk-text-center">
                         <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
                         <button class="uk-button uk-button-primary" type="button">Сохранить</button>
                     </p>
