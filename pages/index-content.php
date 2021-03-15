@@ -16,12 +16,13 @@
                 $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
                 $result = mysqli_query($link, $sql);
                 while ($row = mysqli_fetch_array($result)) {
-                    echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px; position: relative;">
-                        <div style="position: absolute; width: 20px; height: 20px; background-color: red; top: 0px; right: 0px;">
+                    echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px; position: relative;">';
+                    if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) 
+                        echo '<div style="position: absolute; width: 30px; height: 30px; background-color: red; top: 0px; right: 0px; z-index: 1;">
                         </div>
-                        <div style="position: absolute; width: 20px; height: 20px; background-color: blue; top: 0px; right: 20px;">
-                        </div>
-                        <a href="/catalog/', $row['Category'], '">
+                        <div style="position: absolute; width: 30px; height: 30px; background-color: blue; top: 0px; right: 30px; z-index: 1;">
+                        </div>';
+                    echo '<a href="/catalog/', $row['Category'], '">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <img src="../img/', $row['Image'], '" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
