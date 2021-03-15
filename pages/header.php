@@ -140,7 +140,7 @@
                     <input type="hidden" name="type" value="delete-category">
                     <p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                    <button class="uk-button uk-button-primary" type="submit" name="category" value="!!!!!!!!!!!">Удалить</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="category" value="<script>document.write(categor);</script>">Удалить</button>
                     </p>
                     </form>
                     </div>

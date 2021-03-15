@@ -49,11 +49,3 @@
     </div>
 
 </div>    
-
-<!-- <script>
-function Edit(category) {
-	if (Element.style.color == 'green') Element.style.color = 'red';
-	else Element.style.color = 'green';
-	return false;
-}
-</script> -->

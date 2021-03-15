@@ -44,3 +44,10 @@
     <div><i style="margin-right: 25px; text-align: right; color: #F5F4F5; font-size: .75rem; font-weight: 400;">Разработчик: alecsandr-hor@yandex.ru</i></div>
     </div>
 </footer>
+
+<script>
+let categor = '';
+function Edit(category) {
+	categor = category;
+}
+</script>
