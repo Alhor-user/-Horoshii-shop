@@ -171,9 +171,9 @@
 
 
 
-                    <label class="uk-margin-medium-top">Имя категории (отображается на сайте):</label>
+                    <p class="uk-margin-medium-top">Имя категории (отображается на сайте):</p>
                     <input id="editCategoryName" class="uk-input uk-margin-small-top" style="text-align: center;" value="" disabled>
-                    <label class="uk-margin-medium-top">Название категории (отображается в адресной строке, английский):</label>
+                    <p class="uk-margin-medium-top">Название категории (отображается в адресной строке, английский):</p>
                     <input id="editCategoryCategory" class="uk-input uk-margin-small-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
