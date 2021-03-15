@@ -27,7 +27,7 @@
                                             $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
                                             $result = mysqli_query($link, $sql);
                                             while ($row = mysqli_fetch_array($result)) {
-                                                echo '<li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">', $row['Name'], '</a></li>';
+                                                echo '<li><a href="/catalog/', $row['Category'],'" style="font-size: 1rem; padding:15px 25px 7px 25px;">', $row['Name'], '</a></li>';
                                             }; 
                                         ?>
                                         </ul>
