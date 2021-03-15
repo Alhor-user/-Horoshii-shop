@@ -53,15 +53,20 @@
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
+
+
+
+
+
 
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
 
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 25px 0;">';
@@ -69,33 +74,68 @@
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
-            ?>
+            
 
+            
 
-            <div id="modal-example" uk-modal>
-                <div class="uk-modal-dialog uk-modal-body">
-                <form>
-
+            if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
+                // <!-- Модальное окно 1 -->
+                echo'<div id="modal-example-1" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                    <form>
                     <h2 class="uk-modal-title">Изменение строки</h2>
-                    <input class="uk-input" type="text" value="<?php 
-
-
-                        $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
-                        $result = mysqli_query($link, $sql);
-                        $data = mysqli_fetch_array($result);
-                        echo $data['Content'];
-
-
-                    ?>"><p class="uk-text-center">
-                        <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                        <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    <input class="uk-input" type="text" value="';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                echo '"><p class="uk-text-center">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
                     </p>
-                </form>
-                </div>
-            </div>
+                    </form>
+                    </div>
+                    </div>';
+                
+                // <!-- Модальное окно 2 -->
+                echo'<div id="modal-example-2" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                    <form>
+                    <h2 class="uk-modal-title">Изменение строки</h2>
+                    <input class="uk-input" type="text" value="';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                echo '"><p class="uk-text-center">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    </p>
+                    </form>
+                    </div>
+                    </div>';
 
+                // <!-- Модальное окно 3 -->
+                echo'<div id="modal-example-3" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                    <form>
+                    <h2 class="uk-modal-title">Изменение строки</h2>
+                    <input class="uk-input" type="text" value="';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='3'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                echo '"><p class="uk-text-center">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    </p>
+                    </form>
+                    </div>
+                    </div>';
+            }
+            ?>
 
         </div>
     </div>
