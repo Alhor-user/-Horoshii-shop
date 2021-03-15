@@ -77,16 +77,17 @@
                 // <!-- Модальное окно 1 -->
                 echo'<div id="modal-example-1" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form>
+                    <form id="edit-text" method="post" action="../pages/edit.php">
                     <h2 class="uk-modal-title">Изменение строки</h2>
-                    <input class="uk-input" type="text" value="';
+                    <input type="hidden" name="type" value="content">
+                    <input class="uk-input" type="text" name="text" value="';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
                 echo '"><p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="id" value="1">Сохранить</button>
                     </p>
                     </form>
                     </div>
@@ -95,16 +96,17 @@
                 // <!-- Модальное окно 2 -->
                 echo'<div id="modal-example-2" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form>
+                    <form id="edit-text" method="post" action="../pages/edit.php">
                     <h2 class="uk-modal-title">Изменение строки</h2>
-                    <input class="uk-input" type="text" value="';
+                    <input type="hidden" name="type" value="content">
+                    <input class="uk-input" type="text" name="text" value="';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
                 echo '"><p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="id" value="2">Сохранить</button>
                     </p>
                     </form>
                     </div>
@@ -113,16 +115,17 @@
                 // <!-- Модальное окно 3 -->
                 echo'<div id="modal-example-3" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form>
+                    <form id="edit-text" method="post" action="../pages/edit.php">
                     <h2 class="uk-modal-title">Изменение строки</h2>
-                    <input class="uk-input" type="text" value="';
+                    <input type="hidden" name="type" value="content">
+                    <input class="uk-input" type="text" name="text" value="';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='3'";
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
                 echo '"><p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                    <button class="uk-button uk-button-primary" type="button">Сохранить</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="id" value="3">Сохранить</button>
                     </p>
                     </form>
                     </div>
@@ -136,3 +139,20 @@
 
 
 
+        <form style="top: 200px; position: absolute;" id="edit-text" method="post">
+            <h3 style="text-align: center;">Авторизация</p>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" type="text" name="Login">
+                </div>
+            </div>
+
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="password" name="pass">
+                </div>
+            </div>
+            <button class="uk-button uk-button-primary" type="submit" name="sumbit" value="true">Вход</button>
+        </form>
