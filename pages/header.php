@@ -151,8 +151,30 @@
                     <div class="uk-modal-dialog uk-modal-body">
                     <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+
+
+
+
+
+
+                    
+                    <div class="container">
+                        <div class="row">
+                            <label>Загрузить один файл:</label>
+                            <input type="file" id="file" name="file" />
+                        </div>
+                        <div class="row">
+                            <span id="output"></span>
+                        </div>
+                    </div>
+
+
+
+
+
                     <img class="uk-margin-medium-top" data-src="../img/ikra.jpg" width="300px" uk-img style="margin: 0 120px;">
-                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" /> 
+                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" style="margin: 0 120px;" /> 
+                    <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
                     <p class="uk-text-center uk-margin-medium-top">
