@@ -18,7 +18,7 @@ if($uri === '/')
     require 'pages/index.php';
 elseif($uri === '/about')
     require 'pages/about.php';
-elseif(($uri === '/catalog/')) 
+elseif(strpos($uri, '/catalog/') === 0) 
 {
     $category = $segments[1];
     require 'pages/category.php';
