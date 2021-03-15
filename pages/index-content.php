@@ -22,7 +22,7 @@
                             <a href="#" uk-toggle class="uk-icon-button"><i class="fa fa-trash"></i></a>
                         </div>
                         <div style="position: absolute; width: 30px; height: 30px; background-color: blue; top: 0px; right: 30px; z-index: 1;">
-                            <a href="#" uk-toggle class="uk-icon-button" uk-icon="pencil"></a>
+                            <a href="#" uk-toggle class="uk-icon-button"><i class="fas fa-pen"></i></a>
                         </div>';
                     echo '<a href="/catalog/', $row['Category'], '">
                             <div class="uk-card uk-card-default">
