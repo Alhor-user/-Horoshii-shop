@@ -181,7 +181,7 @@
                     <button id="editCategoryOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
                     </p>
                     </form>
-                    </div>
+                    </div> 
                     </div>';
             }
             ?>
