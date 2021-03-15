@@ -130,6 +130,21 @@
                     </form>
                     </div>
                     </div>';
+
+                // Модальное окно для удаления категории
+                echo'<div id="modal-example-4" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                    <form id="delete-category" method="post" action="../pages/edit.php">
+                    <h2 class="uk-modal-title">Внимание!</h2>
+                    <h4 class="uk-modal-title">Вы точно хотите удалить категорию !!!!!!!!!!!!!!!!!!!!?</h2>
+                    <input type="hidden" name="type" value="delete-category">
+                    <p class="uk-text-center">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                    <button class="uk-button uk-button-primary" type="submit" name="category" value="!!!!!!!!!!!">Удалить</button>
+                    </p>
+                    </form>
+                    </div>
+                    </div>';
             }
             ?>
 
