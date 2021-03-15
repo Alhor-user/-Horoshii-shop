@@ -172,9 +172,9 @@
 
 
                     <p class="uk-margin-medium-top">Имя категории (отображается на сайте):</p>
-                    <input id="editCategoryName" class="uk-input uk-margin-small-top" style="text-align: center;" value="" disabled>
+                    <input id="editCategoryName" class="uk-input" style="text-align: center;" value="" disabled>
                     <p class="uk-margin-medium-top">Название категории (отображается в адресной строке, английский):</p>
-                    <input id="editCategoryCategory" class="uk-input uk-margin-small-top" style="text-align: center;" value="" disabled>
+                    <input id="editCategoryCategory" class="uk-input" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
