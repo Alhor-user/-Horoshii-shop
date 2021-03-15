@@ -46,8 +46,8 @@
         </div>
 
         <div class="uk-width-1-4 uk-height-1-1">
-            <p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">Ежедневно, с 09:00 до 20:00<span uk-icon="icon: pencil"></span></p>
-            <p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">Максима Горького, 4, ​Бердск</p><span uk-icon="icon: pencil"></span>
+            <p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">Ежедневно, с 09:00 до 20:00</span></p>
+            <p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">Максима Горького, 4, ​Бердск</p>
             <p class="header-footer-work-text size-2" style="margin: 10px 25px 25px 0;">Микрорайон, 25Б, ​Бердск</p>
         </div>
     </div>
