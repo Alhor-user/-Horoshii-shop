@@ -23,6 +23,10 @@ elseif(($uri === '/catalog/ikra')||($uri === '/catalog/river-fish')||($uri === '
     $category = $segments[1];
     require 'pages/category.php';
 }
+elseif($uri === '/index.php?closesession=true') 
+{
+    require 'pages/index.php?closesession=true';
+}
 else
     require 'pages/404.html';
 ?>
