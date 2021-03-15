@@ -9,9 +9,33 @@
             <a><p class="footer-menu-text" style="margin: 5px 25px 0 0;">Контакты</p></a>
         </div>
         <div class="uk-width-1-4 uk-height-1-1">
-            <p class="header-footer-work-text size-1" style="margin: 0 25px 5px 0;">Ежедневно, с 09:00 до 20:00<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
-            <p class="header-footer-work-text size-2" style="margin: 5px 25px 5px 0;">Максима Горького, 4, ​Бердск<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
-            <p class="header-footer-work-text size-2" style="margin: 5px 25px 0 0;">Микрорайон, 25Б, ​Бердск<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
+
+        <?php // Подгружаем из БД записи, что должны быть в футере и хедере
+                echo '<p class="header-footer-work-text size-1" style="margin: 0 25px 5px 0;">';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                echo '</p>';
+
+                echo '<p class="header-footer-work-text size-2" style="margin: 5px 25px 5px 0;">';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                echo '</p>';
+
+                echo '<p class="header-footer-work-text size-2" style="margin: 5px 25px 0 0;">';
+                $sql = "SELECT `Content` FROM `content` WHERE `ID`='3'";
+                $result = mysqli_query($link, $sql);
+                $data = mysqli_fetch_array($result);
+                echo $data['Content'];
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                echo '</p>';
+            ?>
+
         </div>
     </div>
     <hr>

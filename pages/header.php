@@ -46,7 +46,8 @@
         </div>
 
         <div class="uk-width-1-4 uk-height-1-1">
-            <?php
+        
+            <?php // Подгружаем из БД записи, что должны быть в футере и хедере
                 echo '<p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
                 $result = mysqli_query($link, $sql);
