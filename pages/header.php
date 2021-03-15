@@ -136,8 +136,8 @@
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="delete-category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
-                    <input id="deleteCategoryName" class="uk-input" value="" disabled>
-                    <input type="hidden" name="type" value="delete-category">
+                    <input id="deleteCategoryName" class="uk-input uk-margin-medium-top" value="" disabled>
+                    <input type="hidden" name="type" value="delete-category" style="text-align: center;">
                     <p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
                     <button id="deleteCategoryCategory" class="uk-button uk-button-primary" type="submit" name="category" value="">Удалить</button>
