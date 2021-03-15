@@ -6,8 +6,13 @@
 </head>
 <body style="background-color: #f7f7f7;">
     <!-- Подключаем хедер, контент и футер -->
-    <?php require_once("header.php"); ?>
-    <?php require_once("index-content.php"); ?>
-    <?php require_once("footer.php"); ?>
+    <?php
+        if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
+            require_once("adminpanel.php");
+        };
+        require_once("header.php");
+        require_once("index-content.php");
+        require_once("footer.php"); 
+    ?>
 </body>
 </html>
