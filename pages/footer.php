@@ -47,6 +47,7 @@
 
 <script>
 function Edit(category) {
-	document.getElementById('deleteCategoryCategory').value = category;
+	document.getElementById('deleteCategoryCategory').setAttribute('value', category);
+    
 }
 </script>
