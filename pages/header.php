@@ -135,8 +135,8 @@
                 echo'<div id="modal-example-4" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="delete-category" method="post" action="../pages/edit.php">
-                    <h2 class="uk-modal-title">Внимание!</h2>
-                    <h3 class="uk-modal-title">Вы точно хотите удалить категорию !!!!!!!!!!!!!!!!!!!!?</h2>
+                    <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+                    <input id="deleteCategoryName" class="uk-input" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
                     <p class="uk-text-center">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>

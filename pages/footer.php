@@ -46,8 +46,8 @@
 </footer>
 
 <script>
-function Edit(category) {
+function Edit(category, name) {
 	document.getElementById('deleteCategoryCategory').setAttribute('value', category);
-    console.log(category);
+    document.getElementById('deleteCategoryName').setAttribute('value', name);
 }
 </script>
