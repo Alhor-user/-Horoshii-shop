@@ -30,13 +30,6 @@
                                                 echo '<li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">', $row['Name'], '</a></li>';
                                             }; 
                                         ?>
-
-
-
-                                            <!-- <li><a href="#" style="font-size: 1rem; padding:15px 25px 7px 25px;">Морская рыба</a></li>
-                                            <li><a href="#" style="font-size: 1rem; padding:7px 25px 7px 25px;">Речная рыба</a></li>
-                                            <li><a href="#" style="font-size: .95rem; padding:7px 25px 7px 25px;">Замороженная рыба</a></li>
-                                            <li><a href="#" style="font-size: .95rem; padding:7px 25px 20px 25px;">Охлажденная рыба</a></li> -->
                                         </ul>
                                     </div>
                                 </li>
@@ -53,8 +46,8 @@
         </div>
 
         <div class="uk-width-1-4 uk-height-1-1">
-            <p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">Ежедневно, с 09:00 до 20:00</p>
-            <p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">Максима Горького, 4, ​Бердск</p>
+            <p class="header-footer-work-text size-1" style="margin: 25px 25px 10px 0;">Ежедневно, с 09:00 до 20:00<span uk-icon="icon: pencil"></span></p>
+            <p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">Максима Горького, 4, ​Бердск</p><span uk-icon="icon: pencil"></span>
             <p class="header-footer-work-text size-2" style="margin: 10px 25px 25px 0;">Микрорайон, 25Б, ​Бердск</p>
         </div>
     </div>
