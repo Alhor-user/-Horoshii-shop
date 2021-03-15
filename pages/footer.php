@@ -9,9 +9,9 @@
             <a><p class="footer-menu-text" style="margin: 5px 25px 0 0;">Контакты</p></a>
         </div>
         <div class="uk-width-1-4 uk-height-1-1">
-            <p class="header-footer-work-text size-1" style="margin: 0 25px 5px 0;">Ежедневно, с 09:00 до 20:00</p>
-            <p class="header-footer-work-text size-2" style="margin: 5px 25px 5px 0;">Максима Горького, 4, ​Бердск</p>
-            <p class="header-footer-work-text size-2" style="margin: 5px 25px 0 0;">Микрорайон, 25Б, ​Бердск</p>
+            <p class="header-footer-work-text size-1" style="margin: 0 25px 5px 0;">Ежедневно, с 09:00 до 20:00<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
+            <p class="header-footer-work-text size-2" style="margin: 5px 25px 5px 0;">Максима Горького, 4, ​Бердск<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
+            <p class="header-footer-work-text size-2" style="margin: 5px 25px 0 0;">Микрорайон, 25Б, ​Бердск<?php if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="" uk-icon="icon: pencil"></a><a href="" uk-icon="icon: trash"></a>'; ?></p>
         </div>
     </div>
     <hr>
