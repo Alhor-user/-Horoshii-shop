@@ -56,9 +56,9 @@ function Delete(category, name) {
 
 <script>
 function Edit(category, name) {
-	document.getElementById('editCategoryCategory').setAttribute('placeholder', category);
+	document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
-    document.getElementById('editCategoryName').setAttribute('placeholder', name);
+    document.getElementById('editCategoryName').setAttribute('value', name);
 }
 </script>
 
