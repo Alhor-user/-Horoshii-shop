@@ -47,6 +47,6 @@
 
 <script>
 function Edit(category) {
-	$('#deleteCategoryCategory').val(category)
+	document.getElementById('deleteCategoryCategory').value = category;
 }
 </script>
