@@ -16,6 +16,8 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /pages/index\.html\ HTTP/
 RewriteRule ^pages/index\.html$ https://valtion.ru [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /catalog\ HTTP/
 RewriteRule ^catalog$ https://valtion.ru [L,R=301]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /catalog/\ HTTP/
+RewriteRule ^catalog/$ https://valtion.ru [L,R=301]
 
 #Редирект всех страниц на файл роутинга
 RewriteCond %{REQUEST_FILENAME} !-f
