@@ -157,14 +157,14 @@
 
 
 
-                    
+
                     <div class="container">
                         <div class="row">
-                            <label>Загрузить один файл:</label>
-                            <input type="file" id="file" name="file" />
+                            <label class="uk-margin-small-top">Картинка категории (будет сжата до квадратной):</label><br>
+                            <input class="uk-margin-small-top" type="file" id="file" name="file" />
                         </div>
                         <div class="row">
-                            <span id="output"></span>
+                            <span class="uk-margin-small-top" id="output"></span>
                         </div>
                     </div>
 
@@ -172,8 +172,8 @@
 
 
 
-                    <img class="uk-margin-medium-top" data-src="../img/ikra.jpg" width="300px" uk-img style="margin: 0 120px;">
-                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" style="margin: 0 120px;" /> 
+                    <!--  <img class="uk-margin-medium-top" data-src="../img/ikra.jpg" width="300px" uk-img style="margin: 0 120px;">
+                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" style="margin: 0 120px;" /> -->
                     <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
