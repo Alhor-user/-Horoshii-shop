@@ -74,7 +74,7 @@
             
 
             if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                // <!-- Модальное окно 1 -->
+                // <!-- Модальное окно 1 текст -->
                 echo'<div id="modal-example-1" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="edit-text" method="post" action="../pages/edit.php">
@@ -93,7 +93,7 @@
                     </div>
                     </div>';
                 
-                // <!-- Модальное окно 2 -->
+                // <!-- Модальное окно 2 текст -->
                 echo'<div id="modal-example-2" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="edit-text" method="post" action="../pages/edit.php">
@@ -112,7 +112,7 @@
                     </div>
                     </div>';
 
-                // <!-- Модальное окно 3 -->
+                // <!-- Модальное окно 3 текст -->
                 echo'<div id="modal-example-3" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="edit-text" method="post" action="../pages/edit.php">
@@ -136,6 +136,22 @@
                     <div class="uk-modal-dialog uk-modal-body">
                     <form id="delete-category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+                    <input id="deleteCategoryName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
+                    <input type="hidden" name="type" value="delete-category">
+                    <p class="uk-text-center uk-margin-medium-top">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                    <button id="deleteCategoryCategory" class="uk-button uk-button-primary" type="submit" name="category" value="">Удалить</button>
+                    </p>
+                    </form>
+                    </div>
+                    </div>';
+
+                // Модальное окно для редактирования категории
+                echo'<div id="modal-example-5" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                    <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/edit.php">
+                    <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+                    <input name="picture" type="file" />
                     <input id="deleteCategoryName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
                     <p class="uk-text-center uk-margin-medium-top">
