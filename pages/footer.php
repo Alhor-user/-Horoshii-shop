@@ -46,8 +46,7 @@
 </footer>
 
 <script>
-let categor = '';
 function Edit(category) {
-	categor = category;
+	$('#deleteCategoryCategory').val(category)
 }
 </script>
