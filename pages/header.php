@@ -171,9 +171,9 @@
 
 
 
-                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Имя категории (отображается на сайте):<div class="uk-card-badge uk-label">Новинка</div></p>
+                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Имя категории (отображается на сайте):<i class="fa fa-info-circle fa-lg" style="color: black;"></i></p>
                     <input id="editCategoryName" class="uk-input" style="text-align: center;" value="">
-                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Название категории (отображается в адресной строке, английский):<div class="uk-card-badge uk-label">Новинка</div></p>
+                    <p class="uk-margin-medium-top" style="margin-bottom: 10px;">Название категории (отображается в адресной строке, английский):<i class="fa fa-info-circle fa-lg" style="color: black;"></i></p>
                     <input id="editCategoryCategory" class="uk-input" style="text-align: center;" value="">
                     <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
