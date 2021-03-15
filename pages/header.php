@@ -56,17 +56,12 @@
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
 
-
-
-
-
-
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 10px 0;">';
                 $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-2" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
 
                 echo '<p class="header-footer-work-text size-2" style="margin: 10px 25px 25px 0;">';
@@ -74,10 +69,8 @@
                 $result = mysqli_query($link, $sql);
                 $data = mysqli_fetch_array($result);
                 echo $data['Content'];
-                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-1" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
+                if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) echo '<a href="#modal-example-3" uk-toggle uk-icon="icon: pencil"></a><a href="../pages/edit?type=text&id=1&" uk-icon="icon: trash"></a>';
                 echo '</p>';
-            
-
             
 
             if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
