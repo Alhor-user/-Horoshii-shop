@@ -160,7 +160,7 @@
 
                     <div class="container">
                         <div class="row">
-                            <label class="uk-margin-small-top">Картинка категории (будет сжата до квадратной):</label><br>
+                            <label class="uk-margin-medium-top">Картинка категории (будет сжата до квадратной):</label><br>
                             <input class="uk-margin-small-top" type="file" id="file" name="file" />
                         </div>
                         <div class="row">
@@ -172,11 +172,9 @@
 
 
 
-                    <!--  <img class="uk-margin-medium-top" data-src="../img/ikra.jpg" width="300px" uk-img style="margin: 0 120px;">
-                    <input name="picture" type="file" accept="image/jpeg,image/png,image/gif" style="margin: 0 120px;" /> -->
-                    <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
-                    <input id="1233232" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
-                    <input type="hidden" name="type" value="delete-category">
+                    <input id="editCategoryName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
+                    <input id="editCategoryCategory" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
+                    <input type="hidden" name="type" value="edit-category">
                     <p class="uk-text-center uk-margin-medium-top">
                     <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
                     <button id="123323" class="uk-button uk-button-primary" type="submit" name="category" value="">Сохранить</button>
