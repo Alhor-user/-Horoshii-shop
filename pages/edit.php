@@ -36,6 +36,7 @@
             // Ищем категории с таким же названием 
             $sql = "SELECT * FROM `categories` WHERE `Category`='". $_POST['oldcategory'] ."'";
             $result = mysqli_query($link, $sql);
+            echo mysqli_num_rows($result);
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result)>0) {
