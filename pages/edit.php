@@ -37,6 +37,10 @@
             $sql = "SELECT * FROM `categories` WHERE `Category`=\'". $_POST['oldcategory'] ."\'";
             $result = mysqli_query($link, $sql);
 
+            echo "<pre>";
+            print_r($result);
+            echo "</pre>";
+
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result)>0) {
                 $sql = "UPDATE `categories` SET `Category`=\'". $_POST['newcategory'] ."\' AND `Name`=\'". $_POST['newname'] ."\' AND `Image`=\'". $imgsrc ."\' WHERE `Category`=\'". $_POST['oldcategory'] ."\'";
