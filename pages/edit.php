@@ -37,6 +37,8 @@
             $sql = "SELECT * FROM `categories` WHERE `Category`=\'". $_POST['oldcategory'] ."\'";
             $result = mysqli_query($link, $sql);
 
+            echo $sql;
+            echo $result['ID'];
             echo "<pre>";
             print_r($result);
             echo "</pre>";
