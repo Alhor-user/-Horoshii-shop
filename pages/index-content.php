@@ -19,7 +19,7 @@
                     echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px; position: relative;">';
                     if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) 
                         echo '<div style="position: absolute; width: 30px; height: 30px; background-color: red; top: 0px; right: 0px; z-index: 1;">
-                            <a href="#" uk-toggle class="uk-icon-button" uk-icon="trash"><i class="fa fa-trash"></i></a>
+                            <a href="#" uk-toggle class="uk-icon-button"><i class="fa fa-trash"></i></a>
                         </div>
                         <div style="position: absolute; width: 30px; height: 30px; background-color: blue; top: 0px; right: 30px; z-index: 1;">
                             <a href="#" uk-toggle class="uk-icon-button" uk-icon="pencil"></a>
