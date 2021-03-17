@@ -49,7 +49,7 @@
 
 <script>
 function Delete(category, name) {
-	document.getElementById('category').reset();
+	document.getElementById("formcategory").reset();
     console.log('0');
     document.getElementById('deleteCategoryCategory').setAttribute('value', category);
     document.getElementById('deleteCategoryName').setAttribute('value', name);
