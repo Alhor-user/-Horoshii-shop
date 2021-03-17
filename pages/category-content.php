@@ -49,7 +49,7 @@
                 echo '<a href="#modal-example-9" uk-toggle>
                         <div class="uk-card uk-card-default" style="box-shadow: none;">
                             <div class="uk-card-media-top">
-                                <img src="../img/new-category.png" alt="" class="category-card" style="height: auto;">
+                                <img src="../img/new-item.png" alt="" class="category-card" style="height: auto;">
                             </div>
                         </div>
                     </a>
