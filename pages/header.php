@@ -134,7 +134,7 @@
                 // Модальное окно для удаления категории
                 echo'<div id="modal-example-4" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form id="category" method="post" action="../pages/delete.php">
+                    <form id="deleteategoryform" method="post" action="../pages/delete.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
                     <input id="deleteCategoryName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
