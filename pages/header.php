@@ -183,6 +183,44 @@
                     </form>
                     </div> 
                     </div>';
+
+                // Модальное окно для добавления новой категории
+                echo'<div id="modal-example-6" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/new.php">
+                <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+
+
+
+
+
+
+
+                <div class="container uk-margin-medium-top">
+                    <div class="row">
+                        <label>Картинка категории (будет сжата до квадратной):</label><br>
+                        <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                    </div>
+                    <div class="row">
+                        <span class="uk-margin-small-top" id="output"></span>
+                    </div>
+                </div>
+
+
+
+
+                <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+                <input id="editCategoryName" class="uk-input" name="newname" value="" required>
+                <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
+                <input id="editCategoryCategory" class="uk-input" name="newcategory" value="" required>
+                <input type="hidden" name="type" value="edit-category">
+                <p class="uk-text-center uk-margin-medium-top">
+                <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
+                <button id="editCategoryOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
+                </p>
+                </form>
+                </div> 
+                </div>';
             }
             ?>
 
