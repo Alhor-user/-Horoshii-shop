@@ -48,7 +48,7 @@
 
 
 <script>
-function Delete(category, name) {
+function DeleteCategory(category, name) {
 	document.getElementById("formcategory").reset();
     console.log('0');
     document.getElementById('deleteCategoryCategory').setAttribute('value', category);
@@ -57,8 +57,8 @@ function Delete(category, name) {
 </script>
 
 <script>
-function Edit(category, name) {
-    document.getElementById('category').reset();
+function EditCategory(category, name) {
+    document.getElementById('formcategory').reset();
     console.log('1');
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
