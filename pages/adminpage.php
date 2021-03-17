@@ -16,7 +16,7 @@
             $_SESSION["login"] = $row['Login'];
             $_SESSION["key"] = $row['Session_key'];
             //header('Location: '.'../');
-            echo '<meta http-equiv="Location" content="../">'
+            echo '<meta http-equiv="Location" content="../">';
         } else echo '<h2 style="text-align: center; padding-top:100px;">Ошибка авторизации (неправильный логин или  пароль)</p>';
     }
 ?>
