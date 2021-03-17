@@ -49,7 +49,8 @@
 
 <script>
 function Delete(category, name) {
-	document.getElementById('deleteCategoryCategory').removeAttribute('value', category);
+	console.log('0');
+    document.getElementById('deleteCategoryCategory').removeAttribute('value', category);
     document.getElementById('deleteCategoryCategory').setAttribute('value', category);
     document.getElementById('deleteCategoryName').removeAttribute('value', name);
     document.getElementById('deleteCategoryName').setAttribute('value', name);
@@ -58,6 +59,7 @@ function Delete(category, name) {
 
 <script>
 function Edit(category, name) {
+    console.log('1');
 	document.getElementById('editCategoryCategory').removeAttribute('value', category);
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').removeAttribute('value', category);
