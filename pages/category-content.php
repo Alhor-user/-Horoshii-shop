@@ -55,7 +55,7 @@
                     </a>
                 </div>';
             };?>
-        </div>
+        </div> 
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
