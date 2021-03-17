@@ -24,7 +24,14 @@
                         <div class="icon-edit" style="position: absolute; width: 30px; height: 30px; background-color: white; top: 0px; right: 30px; z-index: 1; opacity: 0.8;">
                             <a href="#modal-example-5" uk-toggle onclick="Edit(\'', $row['Category'], '\', \'', $row['Name'], '\')")><i class="fa fa-pencil fa-lg" style="color: black;"></i></a>
                         </div>';
-                        
+                        echo '<a href="/catalog/', $row['Category'], '">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <img src="../img/new-category.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>';
 
 
                     }
