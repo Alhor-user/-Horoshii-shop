@@ -62,6 +62,9 @@ function EditCategory(category, name) {
     console.log('1');
     console.log(category);
     console.log(name);
+    document.getElementById('editCategoryCategory').defaultValue = "";
+    document.getElementById('editCategoryOldCategory').defaultValue = "";
+    document.getElementById('editCategoryName').defaultValue = "";
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
