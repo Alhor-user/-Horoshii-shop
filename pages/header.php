@@ -149,7 +149,7 @@
                 // Модальное окно для редактирования категории
                 echo'<div id="modal-example-5" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form enctype="multipart/form-data" id="category" method="post" action="../pages/edit.php">
+                    <form enctype="multipart/form-data" id="formcategory" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Редактирование категории</legend>
 
 
