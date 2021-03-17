@@ -58,13 +58,13 @@ function DeleteCategory(category, name) {
 
 <script>
 function EditCategory(category, name) {
-    document.getElementById('formcategory').reset();
     console.log('1');
     console.log(category);
     console.log(name);
     document.getElementById('editCategoryCategory').defaultValue = "";
     document.getElementById('editCategoryOldCategory').defaultValue = "";
     document.getElementById('editCategoryName').defaultValue = "";
+    document.getElementById('formcategory').reset();
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
