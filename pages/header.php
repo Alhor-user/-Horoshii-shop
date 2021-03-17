@@ -153,11 +153,6 @@
                     <legend class="uk-legend">Редактирование категории</legend>
 
 
-
-
-
-
-
                     <div class="container uk-margin-medium-top">
                         <div class="row">
                             <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
@@ -167,8 +162,6 @@
                             <span class="uk-margin-small-top" id="output"></span>
                         </div>
                     </div>
-
-
 
 
                     <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
@@ -192,11 +185,6 @@
                 <legend class="uk-legend">Добавление новой категории</legend>
 
 
-
-
-
-
-
                 <div class="container uk-margin-medium-top">
                     <div class="row">
                         <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
@@ -206,8 +194,6 @@
                         <span class="uk-margin-small-top" id="output"></span>
                     </div>
                 </div>
-
-
 
 
                 <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
