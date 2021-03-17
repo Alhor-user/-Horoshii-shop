@@ -150,7 +150,7 @@
                 echo'<div id="modal-example-5" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                     <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/edit.php">
-                    <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+                    <legend class="uk-legend">Редактирование категории</legend>
 
 
 
@@ -188,7 +188,7 @@
                 echo'<div id="modal-example-6" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                 <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/new.php">
-                <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+                <legend class="uk-legend">Добавление новой категории</legend>
 
 
 
