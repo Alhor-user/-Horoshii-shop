@@ -160,7 +160,7 @@
 
                     <div class="container uk-margin-medium-top">
                         <div class="row">
-                            <label>Картинка категории (будет сжата до квадратной):</label><br>
+                            <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
                             <input class="uk-margin-small-top" type="file" id="file" name="file" />
                         </div>
                         <div class="row">
@@ -198,7 +198,7 @@
 
                 <div class="container uk-margin-medium-top">
                     <div class="row">
-                        <label>Картинка категории (будет сжата до квадратной):</label><br>
+                        <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
                         <input class="uk-margin-small-top" type="file" id="file" name="file" />
                     </div>
                     <div class="row">

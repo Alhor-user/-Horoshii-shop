@@ -23,9 +23,15 @@
         };
 
         if ($_POST['type']=='edit-category'){
+
+            $sql = "SELECT * FROM `categories` WHERE `Category`='". $_POST['oldcategory'] ."'";
+            $result = mysqli_query($link, $sql);
+            $row = mysqli_fetch_array($result);
+            $oldimg = $row['Image'];
+
             if ( 0 < $_FILES['file']['error'] ) {
                 echo 'Error: ' . $_FILES['file']['error'] . '<br>';
-                $imgsrc = 'noimage.png';
+                $imgsrc = $oldimg;
             }
             else {
                 move_uploaded_file($_FILES['file']['tmp_name'], '../img/' . $_FILES['file']['name']);
