@@ -61,7 +61,7 @@ function Delete(category, name) {
 function Edit(category, name) {
     console.log('1');
 	document.getElementById('editCategoryCategory').removeAttribute('value', category);
-    document.getElementById('editCategoryCategory').setAttribute('value', category);
+    //document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').removeAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').removeAttribute('value', name);
