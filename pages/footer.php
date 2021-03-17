@@ -66,14 +66,31 @@ function EditCategory(category, name) {
 }
 </script>
 
+
+
+
 <script>
-function NewCategory(category, name) {
-    document.getElementById('newcategoryform').reset();
-    document.getElementById('newCategoryCategory').setAttribute('value', category);
-    document.getElementById('newCategoryOldCategory').setAttribute('value', category);
-    document.getElementById('newCategoryName').setAttribute('value', name);
+function DeleteItem(category, name) {
+    console.log(category);
+    console.log(name);
+    document.getElementById('deleteitemform').reset();
+    document.getElementById('deleteItemCategory').setAttribute('value', category);
+    document.getElementById('deleteItemName').setAttribute('value', name);
 }
 </script>
+
+<script>
+function EditItem(category, name) {
+    document.getElementById('edititemform').reset();
+    document.getElementById('editItemCategory').setAttribute('value', category);
+    document.getElementById('editItemOldCategory').setAttribute('value', category);
+    document.getElementById('editItemName').setAttribute('value', name);
+}
+</script>
+
+
+
+
 
 <script>
 function handleFileSelect(evt) {
