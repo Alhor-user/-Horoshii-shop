@@ -134,7 +134,7 @@
                 // Модальное окно для удаления категории
                 echo'<div id="modal-example-4" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form id="delete-category" method="post" action="../pages/edit.php">
+                    <form id="category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
                     <input id="deleteCategoryName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
                     <input type="hidden" name="type" value="delete-category">
@@ -149,7 +149,7 @@
                 // Модальное окно для редактирования категории
                 echo'<div id="modal-example-5" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
-                    <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/edit.php">
+                    <form enctype="multipart/form-data" id="category" method="post" action="../pages/edit.php">
                     <legend class="uk-legend">Редактирование категории</legend>
 
 
@@ -187,7 +187,7 @@
                 // Модальное окно для добавления новой категории
                 echo'<div id="modal-example-6" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
-                <form enctype="multipart/form-data" id="delete-category" method="post" action="../pages/new.php">
+                <form enctype="multipart/form-data" id="category" method="post" action="../pages/new.php">
                 <legend class="uk-legend">Добавление новой категории</legend>
 
 
