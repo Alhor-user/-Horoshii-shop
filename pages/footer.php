@@ -49,15 +49,20 @@
 
 <script>
 function Delete(category, name) {
-	document.getElementById('deleteCategoryCategory').setAttribute('value', category);
+	document.getElementById('deleteCategoryCategory').removeAttribute('value', category);
+    document.getElementById('deleteCategoryCategory').setAttribute('value', category);
+    document.getElementById('deleteCategoryName').removeAttribute('value', name);
     document.getElementById('deleteCategoryName').setAttribute('value', name);
 }
 </script>
 
 <script>
 function Edit(category, name) {
-	document.getElementById('editCategoryCategory').setAttribute('value', category);
+	document.getElementById('editCategoryCategory').removeAttribute('value', category);
+    document.getElementById('editCategoryCategory').setAttribute('value', category);
+    document.getElementById('editCategoryOldCategory').removeAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
+    document.getElementById('editCategoryName').removeAttribute('value', name);
     document.getElementById('editCategoryName').setAttribute('value', name);
 }
 </script>
