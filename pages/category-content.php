@@ -17,6 +17,7 @@
 
             <?php
             while ($row = mysqli_fetch_array($result)) {
+                echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">';
                 
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
                     echo '<div class="icon-delete" style="position: absolute; width: 30px; height: 30px; background-color: white; top: 0px; right: 0px; z-index: 1; opacity: 0.8;">
@@ -29,8 +30,8 @@
                 }
                 
                 
-                echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px;">
-                    <a>
+                
+                echo'<a>
                         <div class="uk-card uk-card-default" style="box-shadow: none;">
                             <div class="uk-card-media-top">
                                 <img src="../img/', $row['Image'], '" alt="" class="category-card" style="height: auto;">
