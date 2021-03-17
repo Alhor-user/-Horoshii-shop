@@ -58,10 +58,19 @@ function DeleteCategory(category, name) {
 
 <script>
 function EditCategory(category, name) {
-    document.getElementById('formcategory').reset();
+    document.getElementById('editcategoryform').reset();
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
+}
+</script>
+
+<script>
+function NewCategory(category, name) {
+    document.getElementById('newcategoryform').reset();
+    document.getElementById('newCategoryCategory').setAttribute('value', category);
+    document.getElementById('newCategoryOldCategory').setAttribute('value', category);
+    document.getElementById('newCategoryName').setAttribute('value', name);
 }
 </script>
 
