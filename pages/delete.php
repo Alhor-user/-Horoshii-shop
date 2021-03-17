@@ -3,7 +3,7 @@
     if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
         require_once("../config/db_config.php");
 
-        if ($_POST['type']=='edit-category'){
+        if ($_POST['type']=='new-category'){
 
             if ( 0 < $_FILES['file']['error'] ) {
                 echo 'Error: ' . $_FILES['file']['error'] . '<br>';

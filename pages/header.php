@@ -199,7 +199,7 @@
                 <input id="newCategoryName" class="uk-input" name="newname" value="" required>
                 <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
                 <input id="newCategoryCategory" class="uk-input" name="newcategory" value="" required>
-                <input type="hidden" name="type" value="edit-category">
+                <input type="hidden" name="type" value="new-category">
                 <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
                 <button id="newCategoryOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
