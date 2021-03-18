@@ -30,10 +30,6 @@ function EditItem(category, name) {
 
 
 function handleFileSelect1(evt) {
-    if(document.getElementById('prev1')!= null){ 
-        document.getElementById('prev1').setAttribute('src', '');
-        alert ("Слово");
-    };
     console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
@@ -56,10 +52,6 @@ function handleFileSelect1(evt) {
 }
 
 function handleFileSelect2(evt) {
-    if(document.getElementById('prev2')!= null){ 
-        document.getElementById('prev2').setAttribute('src', '');
-        alert ("Слово");
-    };
     console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
@@ -82,10 +74,6 @@ function handleFileSelect2(evt) {
 }
 
 function handleFileSelect3(evt) {
-    if(document.getElementById('prev3')!= null){ 
-        document.getElementById('prev3').setAttribute('src', '');
-        alert ("Слово");
-    };
     console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
@@ -108,10 +96,6 @@ function handleFileSelect3(evt) {
 }
 
 function handleFileSelect4(evt) {
-    if(document.getElementById('prev4')!= null){ 
-        document.getElementById('prev4').setAttribute('src', '');
-        alert ("Слово");
-    };
     console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
