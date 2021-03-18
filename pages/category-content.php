@@ -42,8 +42,7 @@
                                 <p class="uk-margin-small-top">', $row['Description'], '</p>
                             </div>
                         </div>
-                    </a>
-                </div>';
+                    </a>';
             }; 
             
             if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
@@ -53,8 +52,7 @@
                                 <img src="../img/new-item.png" alt="" class="category-card" style="height: auto;">
                             </div>
                         </div>
-                    </a>
-                </div>';
+                    </a>';
             } elseif ((mysqli_num_rows($result) == 0)) {
                 echo'
                 <div>
