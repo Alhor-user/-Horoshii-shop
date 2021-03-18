@@ -1,4 +1,4 @@
-<div uk-grid class="uk-grid-collapse">
+<div uk-grid class="uk-grid-collapse" style="min-height: 400px;">
 
     <div class="uk-width-1-1" style="height: 50px;">
     </div>
