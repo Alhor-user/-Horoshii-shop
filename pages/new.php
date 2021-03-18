@@ -42,7 +42,7 @@
             else {
                 move_uploaded_file($_FILES['file']['tmp_name'], '../img/' . $_FILES['file']['name']);
                 $imgsrc = $_FILES['file']['name'];
-            };
+            }; 
             
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
