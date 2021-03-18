@@ -28,7 +28,7 @@ function EditItem(category, name) {
     document.getElementById('editItemName').setAttribute('value', name);
 }
 
-function handleFileSelect(evt) {
+function handleFileSelect(evt, windid) {
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -42,7 +42,8 @@ function handleFileSelect(evt) {
             // Render thumbnail.
             var span = document.createElement('span');
             span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
-            document.getElementById('output2').insertBefore(span, null);
+            var output = 'output' + windid;
+            document.getElementById(output).insertBefore(span, null);
         };
     })(f);
     // Read in the image file as a data URL.

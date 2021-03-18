@@ -100,12 +100,13 @@ echo'
             <legend class="uk-legend">Редактирование категории</legend>
 
             <div class="container uk-margin-medium-top">
-                <div class="row">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                <div uk-form-custom="target: true">
+                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
+                    <input class="uk-margin-small-top" type="file" id="file1" name="file" />
+                    <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
-                    <span class="uk-margin-small-top" id="output"></span>
+                    <span class="uk-margin-small-top" id="output1"></span>
                 </div>
             </div>
 
@@ -133,12 +134,13 @@ echo'
             <legend class="uk-legend">Добавление новой категории</legend>
 
             <div class="container uk-margin-medium-top">
-                <div class="row">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                <div uk-form-custom="target: true">
+                <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
+                <input class="uk-margin-small-top" type="file" id="file2" name="file" />
+                    <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
-                    <span class="uk-margin-small-top" id="output"></span>
+                    <span class="uk-margin-small-top" id="output2"></span>
                 </div>
             </div>
 
@@ -194,12 +196,13 @@ echo'
             <legend class="uk-legend">Редактирование категории</legend>
 
             <div class="container uk-margin-medium-top">
-                <div class="row">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                <div uk-form-custom="target: true">
+                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то картинка останется прежней"></i> Картинка товара (будет сжата до квадратной):</label><br>
+                    <input class="uk-margin-small-top" type="file" id="file3" name="file" />
+                    <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
-                    <span class="uk-margin-small-top" id="output"></span>
+                    <span class="uk-margin-small-top" id="output3"></span>
                 </div>
             </div>
 
@@ -215,30 +218,6 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
             <input id="editItemName" class="uk-input" name="newname" value="" required>
          
-            
-
-
-
-
-
-            <div class="container uk-margin-medium-top">
-                <div uk-form-custom="target: true">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    
-                    <input class="uk-margin-small-top" type="file" id="file2" name="file" />
-                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Выбрать файл" disabled>
-                    
-                </div>
-                <div class="row">
-                    <span class="uk-margin-small-top" id="output2"></span>
-                </div>
-            </div>
-
-            
-
-
-
-
             <input type="hidden" name="type" value="edit-category">
             
             <p class="uk-text-center uk-margin-medium-top">
