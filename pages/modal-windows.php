@@ -223,37 +223,18 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
             <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
-            <!-- Выбор Tags 
+            <!-- Выбор Tags -->
             <div class="uk-margin">
                 <select class="uk-select" multiple>
-                    <option>Опция 01</option>
-                    <option>Опция 02</option>
-                    <option>Опция 03</option>
-                    <option>Опция 04</option>
-                    <option>Опция 05</option>
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                        <label><input class="uk-checkbox" type="checkbox"> B</label>
+                        <label><input class="uk-checkbox" type="checkbox"> C</label>
+                        <label><input class="uk-checkbox" type="checkbox"> D</label>
+                        <label><input class="uk-checkbox" type="checkbox"> E</label>
+                    </div>
                 </select>
-            </div>-->
-            <select name="skills" multiple="" class="ui fluid dropdown">
-                <option value="">Skills</option>
-                <option value="angular">Angular</option>
-                <option value="css">CSS</option>
-                <option value="design">Graphic Design</option>
-                <option value="ember">Ember</option>
-                <option value="html">HTML</option>
-                <option value="ia">Information Architecture</option>
-                <option value="javascript">Javascript</option>
-                <option value="mech">Mechanical Engineering</option>
-                <option value="meteor">Meteor</option>
-                <option value="node">NodeJS</option>
-                <option value="plumbing">Plumbing</option>
-                <option value="python">Python</option>
-                <option value="rails">Rails</option>
-                <option value="react">React</option>
-                <option value="repair">Kitchen Repair</option>
-                <option value="ruby">Ruby</option>
-                <option value="ui">UI Design</option>
-                <option value="ux">User Experience</option>
-            </select>
+            </div>
 
             <!-- ID -->
             <input type="hidden" name="type" value="id">
