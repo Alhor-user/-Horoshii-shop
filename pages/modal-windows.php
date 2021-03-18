@@ -291,9 +291,6 @@ echo'
                 <label><input id="newItemTagStock" class="uk-checkbox" type="checkbox" name="newtagstock"> Нет в наличии</label>
             </div>
 
-            <!-- ID -->
-            <input id="newItemID" type="hidden" name="id" value="">
-
             <!-- Category -->
             <input id="newItemCategory" type="hidden" name="newcategory" value="">
 
