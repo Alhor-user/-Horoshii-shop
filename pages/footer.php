@@ -44,3 +44,13 @@
     <div><i style="margin-right: 25px; text-align: right; color: #F5F4F5; font-size: .75rem; font-weight: 400;">Разработчик: alecsandr-hor@yandex.ru</i></div>
     </div>
 </footer>
+
+
+
+<?php 
+if (hash('md5', $_SESSION["login"]) == $_SESSION["key"])
+    echo "
+    <script>
+        document.getElementById('file').addEventListener('change', handleFileSelect, false);
+    </script>";
+?>
