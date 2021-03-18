@@ -244,7 +244,7 @@ echo'
             <!-- Кнопки отправки формы -->
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button class="uk-button uk-button-primary" type="submit" name="oldcategory">Сохранить</button>
+                <button class="uk-button uk-button-primary" type="submit">Сохранить</button>
             </p>
         </form>
     </div> 
