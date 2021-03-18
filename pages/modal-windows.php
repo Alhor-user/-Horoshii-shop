@@ -236,12 +236,13 @@ echo'
             <legend class="uk-legend">Добавление новой категории</legend>
 
             <div class="container uk-margin-medium-top">
-                <div class="row">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
+                <div uk-form-custom="target: true">
+                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то будет установлена картинка по-умолчанию""></i> Картинка товара (будет сжата до квадратной):</label><br>
                     <input class="uk-margin-small-top" type="file" id="file4" name="file" />
+                    <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
-                    <span class="uk-margin-small-top" id="output"></span>
+                    <span class="uk-margin-small-top" id="output4"></span>
                 </div>
             </div>
 
