@@ -254,9 +254,10 @@ echo'
         <form enctype="multipart/form-data" id="newitemform" method="post" action="../pages/new.php">
             <legend class="uk-legend">Добавление новой категории</legend>
 
+            <!-- Выбор изображения -->
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
-                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то будет установлена картинка по-умолчанию""></i> Картинка товара (будет сжата до квадратной):</label><br>
+                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, будет установлена картинка по-умолчанию"></i> Картинка товара (будет сжата до квадратной):</label><br>
                     <input class="uk-margin-small-top" type="file" id="file4" name="file" />
                     <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
@@ -265,17 +266,44 @@ echo'
                 </div>
             </div>
 
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <!-- Ввод Name -->
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра трески\'"></i> Название товара:</p>
             <input id="newItemName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
-            <input id="newItemCategory" class="uk-input" name="newcategory" value="" required>
+            <!-- Ввод Description -->
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Описание отображается на сайте"></i> Описание товара:</p>
+            <input id="newItemDescription" class="uk-input" name="newdescription" value="">
             
-            <input type="hidden" name="type" value="new-category">
+            <!-- Ввод Price -->
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'"></i> Цена:</p>
+            <input id="newItemPrice" class="uk-input" name="newprice" value="">
+
+            <!-- Ввод Count -->
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
+            <input id="newItemCount" class="uk-input" name="newcount" value="">
             
+            <!-- Выбор Tags -->
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
+            <div class="uk-margin-small-left">
+                <label><input id="newItemTagNew" class="uk-checkbox" type="checkbox" name="newtagnew"> Новинка</label>
+            </div>
+            <div class="uk-margin-small-left">
+                <label><input id="newItemTagStock" class="uk-checkbox" type="checkbox" name="newtagstock"> Нет в наличии</label>
+            </div>
+
+            <!-- ID -->
+            <input id="newItemID" type="hidden" name="id" value="">
+
+            <!-- Category -->
+            <input id="newItemCategory" type="hidden" name="newcategory" value="">
+
+            <!-- Категория (для скрипта обработки данных) -->
+            <input type="hidden" name="type" value="new-item">
+
+            <!-- Кнопки отправки формы -->
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button id="newItemOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
+                <button class="uk-button uk-button-primary" type="submit">Сохранить</button>
             </p>
         </form>
     </div> 

@@ -53,8 +53,9 @@ function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory,
     };
 }
 
-function NewItem() {
+function NewItem(itemCategory) {
     document.getElementById('newitemform').reset();
+    document.getElementById('newItemCategory').setAttribute('value', itemCategory);
     if(document.getElementById('prev4')!= null) {
         var image_x = document.getElementById('prev4');
         image_x.parentNode.removeChild(image_x);
