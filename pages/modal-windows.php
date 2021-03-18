@@ -225,11 +225,11 @@ echo'
             
             <!-- Выбор Tags -->
             
-            
-            <div class="uk-margin uk-margin-medium-top">
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <div class="uk-margin">
                 <label><input class="uk-checkbox" type="checkbox"> Новинка</label>
             </div>
-            <div class="uk-margin uk-margin-small-top">
+            <div class="uk-margin">
                 <label><input class="uk-checkbox" type="checkbox"> Нет в наличии</label>
             </div>
             <!-- ID -->
