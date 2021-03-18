@@ -59,7 +59,7 @@
                 </a>';
             } elseif ((mysqli_num_rows($result) == 0)) {
                 echo'
-                <div>
+                <div style="width:100%">
                     <p style="font-size: 72pt; test-align: center;">Ой..</p>
                     <p style="font-size: 48pt; test-align: center;">Кажется, что в этой категории пока что нет товаров..</p>
                 </div>';
