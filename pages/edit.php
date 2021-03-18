@@ -72,11 +72,11 @@
             if (mysqli_num_rows($result) <> 0) {
                 $sql = "UPDATE `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."', `Price`='". $_POST['newprice'] ."', `Count`='". $_POST['newcount'] ."', `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."' WHERE `ID`='". $_POST['id'] ."'";
                 echo $sql;
-                // $result = mysqli_query($link, $sql);
+                $result = mysqli_query($link, $sql);
 
-                // if ($result == false) {
-                //     print("Произошла ошибка при выполнении запроса");
-                // }
+                if ($result == false) {
+                    print("Произошла ошибка при выполнении запроса");
+                }
             } else {
                 print("Произошла ошибка - такого товара не существует (id)");
             };

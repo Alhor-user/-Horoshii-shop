@@ -180,14 +180,6 @@ echo'
     </div>
 </div>';
 
-
-
-
-
-
-
-
-
 // Модальное окно для редактирования товара
 echo'
 <div id="modal-example-8" uk-modal>
@@ -213,15 +205,15 @@ echo'
             
             <!-- Ввод Description -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Описание отображается на сайте"></i> Описание товара:</p>
-            <input id="editItemDescription" class="uk-input" name="newdescription" value="" required>
+            <input id="editItemDescription" class="uk-input" name="newdescription" value="">
             
             <!-- Ввод Price -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'"></i> Цена:</p>
-            <input id="editItemPrice" class="uk-input" name="newprice" value="" required>
+            <input id="editItemPrice" class="uk-input" name="newprice" value="">
 
             <!-- Ввод Count -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
-            <input id="editItemCount" class="uk-input" name="newcount" value="" required>
+            <input id="editItemCount" class="uk-input" name="newcount" value="">
             
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
@@ -249,6 +241,11 @@ echo'
         </form>
     </div> 
 </div>';
+
+
+
+
+
 
 // Модальное окно для добавления новой товара
 echo'
