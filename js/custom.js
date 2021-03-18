@@ -12,13 +12,15 @@ function EditCategory(category, name) {
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
     if(document.getElementById('prev1')!= null) {
-        document.getElementById('prev1').setAttribute('src', '');
+        var image_x = document.getElementById('prev1');
+        image_x.parentNode.removeChild(image_x);
     };
 }
 
 function NewCategory(category, name) {
     if(document.getElementById('prev2')!= null) {
-        document.getElementById('prev2').setAttribute('src', '');
+        var image_x = document.getElementById('prev2');
+        image_x.parentNode.removeChild(image_x);
     };
 }
 
@@ -36,13 +38,15 @@ function EditItem(category, name) {
     document.getElementById('editItemOldCategory').setAttribute('value', category);
     document.getElementById('editItemName').setAttribute('value', name);
     if(document.getElementById('prev3')!= null) {
-        document.getElementById('prev3').setAttribute('src', '');
+        var image_x = document.getElementById('prev3');
+        image_x.parentNode.removeChild(image_x);
     };
 }
 
 function NewItem(category, name) {
     if(document.getElementById('prev4')!= null) {
-        document.getElementById('prev4').setAttribute('src', '');
+        var image_x = document.getElementById('prev4');
+        image_x.parentNode.removeChild(image_x);
     };
 }
 
