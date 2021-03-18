@@ -74,7 +74,7 @@
             
 
             if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                require_once("../pages/modal-windows.php");
+                require_once("modal-windows.php");
             };
             ?>
 
