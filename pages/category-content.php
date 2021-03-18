@@ -46,7 +46,7 @@
             }; 
             
             if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                echo '<a href="#modal-example-9" uk-toggle>
+                echo '<a href="#modal-example-9" onclick="NewItem()" uk-toggle>
                         <div class="uk-card uk-card-default" style="box-shadow: none;">
                             <div class="uk-card-media-top">
                                 <img src="../img/new-item.png" alt="" class="category-card" style="height: auto;">

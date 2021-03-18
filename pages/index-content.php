@@ -34,7 +34,7 @@
                     </div>';
                 }; 
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                    echo '<a href="#modal-example-6" uk-toggle>
+                    echo '<a href="#modal-example-6" onclick="NewCategory()" uk-toggle>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <img src="../img/new-category.png" alt="" class="category-card uk-transition-scale-up uk-transition-opaque">
