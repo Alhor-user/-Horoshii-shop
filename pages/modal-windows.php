@@ -225,14 +225,12 @@ echo'
             
             <!-- Выбор Tags -->
             <div class="uk-margin">
-                <select class="uk-select" multiple>
-                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                        <label><input class="uk-checkbox" type="checkbox" checked> A</label>
-                        <label><input class="uk-checkbox" type="checkbox"> B</label>
-                        <label><input class="uk-checkbox" type="checkbox"> C</label>
-                        <label><input class="uk-checkbox" type="checkbox"> D</label>
-                        <label><input class="uk-checkbox" type="checkbox"> E</label>
-                    </div>
+                <select class="uk-select">
+                    <option><label><input class="uk-checkbox" type="checkbox" checked> A</label></option>
+                    <option><label><input class="uk-checkbox" type="checkbox" checked> A</label></option>
+                    <option><label><input class="uk-checkbox" type="checkbox" checked> A</label></option>
+                    <option><label><input class="uk-checkbox" type="checkbox" checked> A</label></option>
+                    <option><label><input class="uk-checkbox" type="checkbox" checked> A</label></option>
                 </select>
             </div>
 
