@@ -67,7 +67,7 @@ function handleFileSelect1(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img id="prev1" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev1" class="thumb uk-margin-small-top" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output1').insertBefore(span, null);
         };
     })(f);
@@ -89,7 +89,7 @@ function handleFileSelect2(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img id="prev2" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev2" class="thumb uk-margin-small-top" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output2').insertBefore(span, null);
         };
     })(f);
@@ -111,7 +111,7 @@ function handleFileSelect3(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img id="prev3" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev3" class="thumb uk-margin-small-top" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output3').insertBefore(span, null);
         };
     })(f);
@@ -133,7 +133,7 @@ function handleFileSelect4(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img id="prev4" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev4" class="thumb uk-margin-small-top" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output4').insertBefore(span, null);
         };
     })(f);
