@@ -1,6 +1,6 @@
 <?php
     //echo 'Привет, ' . $category . '! <br>';
-    $sql = "SELECT * FROM `production` WHERE `Category`='" . $category . "'";
+    $sql = "SELECT * FROM `production` WHERE `Category`='" . $category . "' ORDER BY `Name`";
     $result = mysqli_query($link, $sql);
 ?>
 

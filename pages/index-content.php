@@ -8,7 +8,7 @@
                 
             <?php // Добавление карточек с категориями из БД
 
-                $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
+                $sql = "SELECT * FROM `categories` WHERE `Status`='Active' ORDER BY `Name`";
                 $result = mysqli_query($link, $sql);
                 while ($row = mysqli_fetch_array($result)) {
                     echo '<div class="uk-inline-clip uk-transition-toggle border-round" tabindex="0" style="padding: 0; cursor: pointer; margin-left: 15px; position: relative;">';
