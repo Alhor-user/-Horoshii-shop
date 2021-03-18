@@ -6,7 +6,7 @@
 
 
 
-<div uk-grid class="uk-grid-collapse" style="min-height: 400px;">
+<div uk-grid class="uk-grid-collapse" style="min-height: 500px;">
 
     <div class="uk-width-1-1" style="height: 50px;">
     </div>
@@ -55,7 +55,7 @@
                         </div>
                     </a>
                 </div>';
-            } elseif ((mysqli_num_rows($row) == 0)) {
+            } elseif ((mysqli_num_rows($result) == 0)) {
                 echo'
                 <div>
                     <p style="font-size: 72pt; test-align: center;">Ой..</p>
