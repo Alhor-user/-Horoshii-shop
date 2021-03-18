@@ -13,15 +13,6 @@
             }
         };
 
-        if ($_POST['type']=='delete-category'){
-            $sql = "DELETE FROM `categories` WHERE `Category`= '". $_POST['category'] ."'";
-            $result = mysqli_query($link, $sql);
-
-            if ($result == false) {
-                print("Произошла ошибка при выполнении запроса");
-            }
-        };
-
         if ($_POST['type']=='edit-category'){
 
             $sql = "SELECT * FROM `categories` WHERE `Category`='". $_POST['oldcategory'] ."'";

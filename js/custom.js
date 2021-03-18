@@ -36,13 +36,6 @@ function DeleteItem(id, name) {
 function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory, itemTagNew, itemTagStock, itemID) {
     //styleTag.removeAttribute('scope');
     document.getElementById('edititemform').reset();
-    console.log(itemName);
-    console.log(itemDescription);
-    console.log(itemPrice);
-    console.log(itemCount);
-    console.log(itemTagNew);
-    console.log(itemTagStock);
-    console.log(itemID);
     document.getElementById('editItemName').setAttribute('value', itemName);
     document.getElementById('editItemDescription').setAttribute('value', itemDescription);
     document.getElementById('editItemPrice').setAttribute('value', itemPrice);
