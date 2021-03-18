@@ -42,8 +42,8 @@ function EditItem(itemName, itemDescription, itemPrice, itemCount, itemTagNew, i
     document.getElementById('editItemCount').setAttribute('value', itemCount);
     document.getElementById('editItemCategory').setAttribute('value', itemCategory);
     
-    document.getElementById('editItemTagNew').setAttribute('value', itemTagNew);!!!!!!!!!!!!!!!!!!!!!!!
-    document.getElementById('editItemTagStock').setAttribute('value', itemTagStock);!!!!!!!!!!!!!!!!!!!
+    if (itemTagNew != 0) document.getElementById('editItemTagNew').setAttribute('checked', '');
+    if (itemTagStock != 0) document.getElementById('editItemTagStock').setAttribute('checked', '');
     
     document.getElementById('editItemID').setAttribute('value', itemID);
     
