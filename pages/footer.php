@@ -51,6 +51,6 @@
 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"])
     echo "
     <script>
-        document.getElementById('file').addEventListener('change', handleFileSelect, false);
+        document.getElementById('file2').addEventListener('change', handleFileSelect, false);
     </script>";
 ?>

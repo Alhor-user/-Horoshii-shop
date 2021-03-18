@@ -42,7 +42,7 @@ function handleFileSelect(evt) {
             // Render thumbnail.
             var span = document.createElement('span');
             span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
-            document.getElementById('output').insertBefore(span, null);
+            document.getElementById('output2').insertBefore(span, null);
         };
     })(f);
     // Read in the image file as a data URL.
