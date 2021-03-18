@@ -37,7 +37,7 @@
 
             if ( 0 < $_FILES['file']['error'] ) {
                 echo 'Error: ' . $_FILES['file']['error'] . '<br>';
-                $imgsrc = $oldimg;
+                $imgsrc = 'noimage.png';
             }
             else {
                 move_uploaded_file($_FILES['file']['tmp_name'], '../img/' . $_FILES['file']['name']);
