@@ -225,12 +225,12 @@ echo'
                 <div uk-form-custom="target: true">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
                     
-                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                    <input class="uk-margin-small-top" type="file" id="file2" name="file" />
                     <input class="uk-input uk-form-width-medium" type="text" placeholder="Выбрать файл" disabled>
                     
                 </div>
                 <div class="row">
-                    <span class="uk-margin-small-top" id="output"></span>
+                    <span class="uk-margin-small-top" id="output2"></span>
                 </div>
             </div>
 
