@@ -6,7 +6,7 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input type="hidden" name="type" value="content">
+            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
             
             <input class="uk-input" type="text" name="text" value="';
             
@@ -30,7 +30,7 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input type="hidden" name="type" value="content">
+            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
             
             <input class="uk-input" type="text" name="text" value="';
             
@@ -54,7 +54,7 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input type="hidden" name="type" value="content">
+            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
             
             <input class="uk-input" type="text" name="text" value="';
             
