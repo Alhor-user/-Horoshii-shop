@@ -226,12 +226,13 @@ echo'
             <!-- Выбор Tags -->
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
-            <div class="uk-margin">
+            <div class="uk-margin-small-left">
                 <label><input class="uk-checkbox" type="checkbox"> Новинка</label>
             </div>
-            <div class="uk-margin">
+            <div class="uk-margin-small-left">
                 <label><input class="uk-checkbox" type="checkbox"> Нет в наличии</label>
             </div>
+
             <!-- ID -->
             <input type="hidden" name="type" value="id">
 
