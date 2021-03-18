@@ -13,11 +13,11 @@ function EditCategory(category, name) {
     document.getElementById('editCategoryName').setAttribute('value', name);
 }
 
-function DeleteItem(category, name) {
-    console.log(category);
+function DeleteItem(id, name) {
+    console.log(id);
     console.log(name);
     document.getElementById('deleteitemform').reset();
-    document.getElementById('deleteItemCategory').setAttribute('value', category);
+    document.getElementById('deleteItemID').setAttribute('value', id);
     document.getElementById('deleteItemName').setAttribute('value', name);
 }
 

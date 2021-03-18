@@ -165,7 +165,7 @@ echo'
 <div id="modal-example-7" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <form id="deleteitemform" method="post" action="../pages/delete.php">
-            <legend class="uk-legend">Вы точно хотите удалить эту категорию?</legend>
+            <legend class="uk-legend">Вы точно хотите удалить этот товар?</legend>
             
             <input id="deleteItemName" class="uk-input uk-margin-medium-top" style="text-align: center;" value="" disabled>
             
@@ -173,7 +173,7 @@ echo'
             
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button id="deleteItemCategory" class="uk-button uk-button-primary" type="submit" name="category" value="">Удалить</button>
+                <button id="deleteItemID" class="uk-button uk-button-primary" type="submit" name="ID" value="">Удалить</button>
             </p>
         </form>
     </div>
