@@ -233,7 +233,7 @@ echo'
             </div>
 
             <!-- ID -->
-            <input  type="hidden" name="id" >
+            <input id="editItemID" type="hidden" name="id" value="">
 
             <!-- Category -->
             <input id="editItemCategory" type="hidden" name="newcategory" value="">
@@ -244,7 +244,7 @@ echo'
             <!-- Кнопки отправки формы -->
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button id="editItemID" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
+                <button class="uk-button uk-button-primary" type="submit" name="oldcategory">Сохранить</button>
             </p>
         </form>
     </div> 
