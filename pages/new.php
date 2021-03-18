@@ -15,12 +15,12 @@
             };
             
             // Ищем категории с таким же названием 
-            $sql = "SELECT * FROM `categories` WHERE `Category`='". $_POST['newcategory'] ."'";
+            $sql = "SELECT * FROM `categories` WHERE `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'";
             $result = mysqli_query($link, $sql);
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if ((mysqli_num_rows($result) == 0) or ($_POST['oldcategory']==$_POST['newcategory'] )) {
-                $sql = "INSERT INTO `categories` SET `Category`='". $_POST['newcategory'] ."', `Name`='". $_POST['newname'] ."', `Image`='". $imgsrc ."', `Status`='Active'";
+                $sql = "INSERT INTO `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Status`='Active'";
                 echo $sql;
                 $result = mysqli_query($link, $sql);
 
