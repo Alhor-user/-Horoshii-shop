@@ -224,10 +224,14 @@ echo'
             <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
             <!-- Выбор Tags -->
-            <label><input class="uk-checkbox" type="checkbox" class="uk-margin-medium-top"> Новинка</label>
-            <label><input class="uk-checkbox" type="checkbox" class="uk-margin-small-top"> Нет в наличии</label>
-
-
+            
+            
+            <div class="uk-margin uk-margin-medium-top">
+                <label><input class="uk-checkbox" type="checkbox"> Новинка</label>
+            </div>
+            <div class="uk-margin uk-margin-small-top">
+                <label><input class="uk-checkbox" type="checkbox"> Нет в наличии</label>
+            </div>
             <!-- ID -->
             <input type="hidden" name="type" value="id">
 
