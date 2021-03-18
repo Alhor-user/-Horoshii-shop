@@ -6,9 +6,9 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
+            <input type="hidden" name="type" value="content">
             
-            <input class="uk-input" type="text" name="text" value="';
+            <input class="uk-input uk-margin-medium-top" type="text" name="text" value="';
             
             $sql = "SELECT `Content` FROM `content` WHERE `ID`='1'";
             $result = mysqli_query($link, $sql);
@@ -30,9 +30,9 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
+            <input type="hidden" name="type" value="content">
             
-            <input class="uk-input" type="text" name="text" value="';
+            <input class="uk-input uk-margin-medium-top" type="text" name="text" value="';
             
             $sql = "SELECT `Content` FROM `content` WHERE `ID`='2'";
             $result = mysqli_query($link, $sql);
@@ -54,9 +54,9 @@ echo'
         <form id="edit-text" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Изменение строки</legend>
             
-            <input class="uk-margin-medium-top" type="hidden" name="type" value="content">
+            <input type="hidden" name="type" value="content">
             
-            <input class="uk-input" type="text" name="text" value="';
+            <input class="uk-input uk-margin-medium-top" type="text" name="text" value="';
             
             $sql = "SELECT `Content` FROM `content` WHERE `ID`='3'";
             $result = mysqli_query($link, $sql);
