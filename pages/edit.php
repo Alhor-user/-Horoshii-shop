@@ -67,16 +67,18 @@
 
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
+            $price = ($_POST['newprice']==0 ? NULL : $_POST['newprice']);
+            $count = ($_POST['newcount']==0 ? NULL : $_POST['newcount']);
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result) <> 0) {
-                $sql = "UPDATE `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."', `Price`='". $_POST['newprice'] ."', `Count`='". $_POST['newcount'] ."', `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."' WHERE `ID`='". $_POST['id'] ."'";
+                $sql = "UPDATE `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."', `Price`='". $price ."', `Count`='". $count ."', `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."' WHERE `ID`='". $_POST['id'] ."'";
                 echo $sql;
-                $result = mysqli_query($link, $sql);
+                // $result = mysqli_query($link, $sql);
 
-                if ($result == false) {
-                    print("Произошла ошибка при выполнении запроса");
-                }
+                // if ($result == false) {
+                //     print("Произошла ошибка при выполнении запроса");
+                // }
             } else {
                 print("Произошла ошибка - такого товара не существует (id)");
             };
