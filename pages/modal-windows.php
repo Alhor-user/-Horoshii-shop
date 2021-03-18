@@ -71,6 +71,8 @@ echo'
     </div>
 </div>';
 
+
+
 // Модальное окно для удаления категории
 echo'
 <div id="modal-example-4" uk-modal>
@@ -157,9 +159,6 @@ echo'
 </div>';
 
 
-
-
-
 // Модальное окно для удаления товара
 echo'
 <div id="modal-example-7" uk-modal>
@@ -178,6 +177,14 @@ echo'
         </form>
     </div>
 </div>';
+
+
+
+
+
+
+
+
 
 // Модальное окно для редактирования товара
 echo'
@@ -199,9 +206,39 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
             <input id="editItemName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
-            <input id="editItemCategory" class="uk-input" name="newcategory" value="" required>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <input id="editItemName" class="uk-input" name="newname" value="" required>
             
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <input id="editItemName" class="uk-input" name="newname" value="" required>
+
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <input id="editItemName" class="uk-input" name="newname" value="" required>
+         
+            
+
+
+
+
+
+            <div class="container uk-margin-medium-top">
+                <div uk-form-custom="target: true">
+                    <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
+                    
+                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Выбрать файл" disabled>
+
+                </div>
+                <div uk-form-custom="target: true">
+                    <span class="uk-margin-small-top" id="output"></span>
+                </div>
+            </div>
+
+            
+
+
+
+
             <input type="hidden" name="type" value="edit-category">
             
             <p class="uk-text-center uk-margin-medium-top">
