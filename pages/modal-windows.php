@@ -100,8 +100,8 @@ echo'
             <legend class="uk-legend">Редактирование категории</legend>
 
             <script>
-            if(document.getElementById(\'prev1\')!= null){ 
-                document.getElementById(\'prev1\').setAttribute(\'src\', '');
+            if(document.getElementById("prev1")!= null){ 
+                document.getElementById("prev1").setAttribute("src", "");
                 alert ("Слово");
             };
             </script>
@@ -141,8 +141,8 @@ echo'
             <legend class="uk-legend">Добавление новой категории</legend>
 
             <script>
-            if(document.getElementById(\'prev2\')!= null){ 
-                document.getElementById(\'prev2\').setAttribute(\'src\', '');
+            if(document.getElementById("prev2")!= null){ 
+                document.getElementById("prev2").setAttribute("src", "");
                 alert ("Слово");
             };
             </script>
@@ -210,8 +210,8 @@ echo'
             <legend class="uk-legend">Редактирование категории</legend>
 
             <script>
-            if(document.getElementById(\'prev3\')!= null){ 
-                document.getElementById(\'prev3\').setAttribute(\'src\', '');
+            if(document.getElementById("prev3")!= null){ 
+                document.getElementById("prev3").setAttribute("src", "");
                 alert ("Слово");
             };
             </script>
@@ -257,8 +257,8 @@ echo'
             <legend class="uk-legend">Добавление новой категории</legend>
 
             <script>
-            if(document.getElementById(\'prev4\')!= null){ 
-                document.getElementById(\'prev4\').setAttribute(\'src\', '');
+            if(document.getElementById("prev4")!= null){ 
+                document.getElementById("prev4").setAttribute("src", "");
                 alert ("Слово");
             };
             </script>
