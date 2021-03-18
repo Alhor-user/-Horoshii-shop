@@ -53,11 +53,11 @@
 
             $sql = "INSERT INTO `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."'". $price . $count .", `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."'";
             echo $sql;
-            // $result = mysqli_query($link, $sql);
+            $result = mysqli_query($link, $sql);
 
-            // if ($result == false) {
-            //     print("Произошла ошибка при выполнении запроса");
-            // } 
+            if ($result == false) {
+                print("Произошла ошибка при выполнении запроса");
+            } 
         };
 
         echo "<pre>";
