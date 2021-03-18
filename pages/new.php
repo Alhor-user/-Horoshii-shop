@@ -50,18 +50,14 @@
             if ($_POST['newprice']<>0) $price = ", `Price`='".$_POST['newprice']."'"; else $price = ", `Price`=NULL";
             if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = ", `Count`=NULL";
 
-            // Обновляем строку, если до этого не нашли таких же категорий
-            if (mysqli_num_rows($result) <> 0) {
-                $sql = "INSERT INTO `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."'". $price . $count .", `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."'";
-                echo $sql;
-                // $result = mysqli_query($link, $sql);
 
-                // if ($result == false) {
-                //     print("Произошла ошибка при выполнении запроса");
-                // } 
-            } else {
-                print("Произошла ошибка - такого товара не существует (id)");
-            };
+            $sql = "INSERT INTO `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."'". $price . $count .", `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."'";
+            echo $sql;
+            // $result = mysqli_query($link, $sql);
+
+            // if ($result == false) {
+            //     print("Произошла ошибка при выполнении запроса");
+            // } 
         };
 
         echo "<pre>";
