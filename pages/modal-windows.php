@@ -225,7 +225,7 @@ echo'
             
             <!-- Выбор Tags -->
             <div class="uk-margin">
-                <select class="uk-select" multiple>
+                <select class="uk-select" multiple data-placeholder="Выберите теги">
                     <option>Опция 01</option>
                     <option>Опция 02</option>
                     <option>Опция 03</option>
