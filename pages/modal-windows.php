@@ -238,7 +238,7 @@ echo'
             <div class="container uk-margin-medium-top">
                 <div class="row">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать файл, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file" name="file" />
+                    <input class="uk-margin-small-top" type="file" id="file4" name="file" />
                 </div>
                 <div class="row">
                     <span class="uk-margin-small-top" id="output"></span>

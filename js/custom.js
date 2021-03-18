@@ -28,8 +28,10 @@ function EditItem(category, name) {
     document.getElementById('editItemName').setAttribute('value', name);
 }
 
+
 function handleFileSelect1(evt) {
     document.getElementById('prev1').setAttribute('src', '');
+    console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -52,6 +54,7 @@ function handleFileSelect1(evt) {
 
 function handleFileSelect2(evt) {
     document.getElementById('prev2').setAttribute('src', '');
+    console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -74,6 +77,7 @@ function handleFileSelect2(evt) {
 
 function handleFileSelect3(evt) {
     document.getElementById('prev3').setAttribute('src', '');
+    console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -96,6 +100,7 @@ function handleFileSelect3(evt) {
 
 function handleFileSelect4(evt) {
     document.getElementById('prev4').setAttribute('src', '');
+    console.log('1');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
