@@ -102,7 +102,7 @@ echo'
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то картинка останется прежней"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file1" name="file" />
+                    <input class="uk-margin-small-top" type="file" id="file1" name="file1" />
                     <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
@@ -136,7 +136,7 @@ echo'
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
                 <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то будет установлена картинка по-умолчанию"></i> Картинка категории (будет сжата до квадратной):</label><br>
-                <input class="uk-margin-small-top" type="file" id="file2" name="file" />
+                <input class="uk-margin-small-top" type="file" id="file2" name="file2" />
                     <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
@@ -199,7 +199,7 @@ echo'
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то картинка останется прежней"></i> Картинка товара (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file3" name="file" />
+                    <input class="uk-margin-small-top" type="file" id="file3" name="file3" />
                     <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
@@ -260,7 +260,7 @@ echo'
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то будет установлена картинка по-умолчанию""></i> Картинка товара (будет сжата до квадратной):</label><br>
-                    <input class="uk-margin-small-top" type="file" id="file4" name="file" />
+                    <input class="uk-margin-small-top" type="file" id="file4" name="file4" />
                     <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" placeholder="Выбрать файл" disabled>
                 </div>
                 <div class="row">
