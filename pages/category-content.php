@@ -1,7 +1,35 @@
 <?php
-    //echo 'Привет, ' . $category . '! <br>';
-    $sql = "SELECT * FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "' ORDER BY `Name`";
+    // Поверка, есть ли GET запрос
+    if (isset($_GET['page'])) {
+        // Если да то переменной $pageno присваиваем его
+        $page = $_GET['page'];
+    } else { // Иначе
+        // Присваиваем $pageno один
+        $page = 1;
+    }
+    
+    // Назначаем количество данных на одной странице
+    $size_page = 5;
+    // Вычисляем с какого объекта начать выводить
+    $offset = ($page-1) * $size_page;
+
+
+
+    // SQL запрос для получения количества элементов
+    $count_sql = "SELECT COUNT(*) FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "'";
+    // Отправляем запрос для получения количества элементов
+    $result = mysqli_query($link, $count_sql);
+    // Получаем результат
+    $total_rows = mysqli_fetch_array($result)[0];
+    // Вычисляем количество страниц
+    $total_pages = ceil($total_rows / $size_page);
+
+
+
+    $sql = "SELECT * FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "' ORDER BY `Name` LIMIT $offset, $size_page";
     $result = mysqli_query($link, $sql);
+
+
 ?>
 
 
@@ -69,6 +97,16 @@
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
+    <ul class="pagination">
+        <li><a href="?page=1">First</a></li>
+        <li class="<?php if($page <= 1){ echo 'disabled'; } ?>">
+            <a href="<?php if($page <= 1){ echo '#'; } else { echo "?page=".($page - 1); } ?>">Prev</a>
+        </li>
+        <li class="<?php if($page >= $total_pages){ echo 'disabled'; } ?>">
+            <a href="<?php if($page >= $total_pages){ echo '#'; } else { echo "?page=".($page + 1); } ?>">Next</a>
+        </li>
+        <li><a href="?page=<?php echo $total_pages; ?>">Last</a></li>
+    </ul>
     </div>
 
 </div>
