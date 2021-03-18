@@ -99,12 +99,7 @@ echo'
         <form enctype="multipart/form-data" id="editcategoryform" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Редактирование категории</legend>
 
-            <script>
-            if(document.getElementById("prev1")!= null){ 
-                document.getElementById("prev1").setAttribute("src", "");
-                alert ("Слово");
-            };
-            </script>
+            <script>if(document.getElementById(\'prev1\')!= null){document.getElementById(\'prev1\').setAttribute(\'src\', \'\');};</script>
 
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
@@ -140,12 +135,7 @@ echo'
         <form enctype="multipart/form-data" id="newcategoryform" method="post" action="../pages/new.php">
             <legend class="uk-legend">Добавление новой категории</legend>
 
-            <script>
-            if(document.getElementById("prev2")!= null){ 
-                document.getElementById("prev2").setAttribute("src", "");
-                alert ("Слово");
-            };
-            </script>
+            <script>if(document.getElementById(\'prev2\')!= null){document.getElementById(\'prev2\').setAttribute(\'src\', \'\');};</script>
 
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
@@ -209,12 +199,7 @@ echo'
         <form enctype="multipart/form-data" id="edititemform" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Редактирование категории</legend>
 
-            <script>
-            if(document.getElementById("prev3")!= null){ 
-                document.getElementById("prev3").setAttribute("src", "");
-                alert ("Слово");
-            };
-            </script>
+            <script>if(document.getElementById(\'prev3\')!= null){document.getElementById(\'prev3\').setAttribute(\'src\', \'\');};</script>
 
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
@@ -256,12 +241,7 @@ echo'
         <form enctype="multipart/form-data" id="newitemform" method="post" action="../pages/new.php">
             <legend class="uk-legend">Добавление новой категории</legend>
 
-            <script>
-            if(document.getElementById("prev4")!= null){ 
-                document.getElementById("prev4").setAttribute("src", "");
-                alert ("Слово");
-            };
-            </script>
+            <script>if(document.getElementById(\'prev4\')!= null){document.getElementById(\'prev4\').setAttribute(\'src\', \'\');};</script>
 
             <div class="container uk-margin-medium-top">
                 <div class="row">
