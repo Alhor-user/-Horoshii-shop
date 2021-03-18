@@ -55,21 +55,5 @@ if (hash('md5', $_SESSION["login"]) == $_SESSION["key"])
         document.getElementById('file2').addEventListener('change', handleFileSelect2, false);
         document.getElementById('file3').addEventListener('change', handleFileSelect3, false);
         document.getElementById('file4').addEventListener('change', handleFileSelect4, false);
-        var nip = document.getElementById('newItemPrice');
-        var eip = document.getElementById('editItemPrice');
-        var ncc = document.getElementById('newCategoryCategory');
-        var ecc = document.getElementById('editCategoryCategory');
-        nip.oninvalid = function(event) {
-            event.target.setCustomValidity('Разрешенные символы - цифры и ','');
-        }
-        eip.oninvalid = function(event) {
-            event.target.setCustomValidity('Разрешенные символы - цифры и ','');
-        }
-        ncc.oninvalid = function(event) {
-            event.target.setCustomValidity('Разрешенные символы - латинский алфавит, ' ' и '-'');
-        }
-        ecc.oninvalid = function(event) {
-            event.target.setCustomValidity('Разрешенные символы - латинский алфавит, ' ' и '-'');
-        }
     </script>";
 ?>
