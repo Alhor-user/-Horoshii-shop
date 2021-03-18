@@ -1,6 +1,6 @@
 <?php
     //echo 'Привет, ' . $category . '! <br>';
-    $sql = "SELECT * FROM `production` WHERE `Category`='" . $category . "' ORDER BY `Name`";
+    $sql = "SELECT * FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "' ORDER BY `Name`";
     $result = mysqli_query($link, $sql);
 ?>
 

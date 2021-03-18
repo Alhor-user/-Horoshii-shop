@@ -51,7 +51,7 @@
             if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = ", `Count`=NULL";
 
 
-            $sql = "INSERT INTO `production` SET `Image`='". $imgsrc ."', `Name`='". $_POST['newname'] ."', `Description`='". $_POST['newdescription'] ."', `Category`='". $_POST['newcategory'] ."'". $price . $count .", `Is-new`='". $tagnew ."', `Is-no-stock`='". $tagstock ."'";
+            $sql = "INSERT INTO `production` SET `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Description`='". mysqli_real_escape_string($link, $_POST['newdescription']) ."', `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'". mysqli_real_escape_string($link, $price) . mysqli_real_escape_string($link, $count) .", `Is-new`='". mysqli_real_escape_string($link, $tagnew) ."', `Is-no-stock`='". mysqli_real_escape_string($link, $tagstock) ."'";
             echo $sql;
             $result = mysqli_query($link, $sql);
 
