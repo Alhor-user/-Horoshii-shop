@@ -13,6 +13,16 @@
             }
         };
 
+
+        if ($_POST['type']=='delete-item'){
+            $sql = "DELETE FROM `production` WHERE `ID`= '". $_POST['ID'] ."'";
+            $result = mysqli_query($link, $sql);
+
+            if ($result == false) {
+                print("Произошла ошибка при выполнении запроса");
+            }
+        };
+
         
         echo "<pre>";
         print_r($_POST);
