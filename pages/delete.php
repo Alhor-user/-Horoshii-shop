@@ -23,9 +23,9 @@
             }
         }; 
 
-        
-        echo "<pre>";
-        print_r($_POST);
-        echo "</pre>";
+        header("Location: {$_SERVER['HTTP_REFERER']}");
+        // echo "<pre>";
+        // print_r($_POST);
+        // echo "</pre>";
     }
 ?>
