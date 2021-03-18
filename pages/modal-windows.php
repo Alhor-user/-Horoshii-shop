@@ -224,19 +224,9 @@ echo'
             <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
             <!-- Выбор Tags -->
-            <div class="uk-margin">
-                <label class="uk-form-label" for="form-stacked-select">Селект</label>
-                <div class="uk-form-controls">
-                    <select class="uk-select" id="form-stacked-select" multiple>
-                        <option label="Выбор тегов" disabled>Опция 02</option>
-                        <option>Опция 01</option>
-                        <option>Опция 02</option>
-                        <option>Опция 02</option>
-                        <option>Опция 02</option>
-                        <option>Опция 02</option>
-                    </select>
-                </div>
-            </div>
+            <label><input class="uk-checkbox" type="checkbox" class="uk-margin-medium-top"> Новинка</label>
+            <label><input class="uk-checkbox" type="checkbox" class="uk-margin-small-top"> Нет в наличии</label>
+
 
             <!-- ID -->
             <input type="hidden" name="type" value="id">
