@@ -195,6 +195,7 @@ echo'
         <form enctype="multipart/form-data" id="edititemform" method="post" action="../pages/edit.php">
             <legend class="uk-legend">Редактирование категории</legend>
 
+            <!-- Выбор изображения -->
             <div class="container uk-margin-medium-top">
                 <div uk-form-custom="target: true">
                     <label><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если не выбрать изображение, то картинка останется прежней"></i> Картинка товара (будет сжата до квадратной):</label><br>
@@ -206,20 +207,40 @@ echo'
                 </div>
             </div>
 
+            <!-- Ввод Name -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
             <input id="editItemName" class="uk-input" name="newname" value="" required>
             
+            <!-- Ввод Description -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
-            <input id="editItemName" class="uk-input" name="newname" value="" required>
+            <input id="editItemName" class="uk-input" name="newdescription" value="" required>
             
+            <!-- Ввод Price -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
-            <input id="editItemName" class="uk-input" name="newname" value="" required>
+            <input id="editItemName" class="uk-input" name="newprice" value="" required>
 
+            <!-- Ввод Count -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
-            <input id="editItemName" class="uk-input" name="newname" value="" required>
-         
-            <input type="hidden" name="type" value="edit-category">
+            <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
+            <!-- Выбор Tags -->
+            <div class="uk-margin">
+                <select class="uk-select" multiple>
+                    <option>Опция 01</option>
+                    <option>Опция 02</option>
+                    <option>Опция 03</option>
+                    <option>Опция 04</option>
+                    <option>Опция 05</option>
+                </select>
+            </div>
+
+            <!-- ID -->
+            <input type="hidden" name="type" value="id">
+
+            <!-- Категория (для скрипта обработки данных) -->
+            <input type="hidden" name="type" value="edit-category">
+
+            <!-- Кнопки отправки формы -->
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
                 <button id="editItemOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
