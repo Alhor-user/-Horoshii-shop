@@ -223,7 +223,7 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
             <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
-            <!-- Выбор Tags -->
+            <!-- Выбор Tags 
             <div class="uk-margin">
                 <select class="uk-select" multiple>
                     <option>Опция 01</option>
@@ -232,7 +232,7 @@ echo'
                     <option>Опция 04</option>
                     <option>Опция 05</option>
                 </select>
-            </div>
+            </div>-->
             <select name="skills" multiple="" class="ui fluid dropdown">
                 <option value="">Skills</option>
                 <option value="angular">Angular</option>
