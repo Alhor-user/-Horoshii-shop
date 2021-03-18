@@ -18,7 +18,7 @@
                         <div class="uk-navbar-center">
                             <ul class="uk-navbar-nav">
                                 <li>
-                                    <a href="#" class="header-menu-h1-text">Продукция</a>
+                                    <a href="/" class="header-menu-h1-text">Продукция</a>
                                     <div class="uk-navbar-dropdown" style="box-shadow: none; background-color: #27698f; padding: 0;" uk-dropdown="offset: 0; padding: 0;">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
 
