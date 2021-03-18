@@ -65,8 +65,8 @@
             };
             
 
-            if (isset($_POST['newtagstock'])) $tagstock = 1;
-            if (isset($_POST['newtagnew'])) $tagnew = 1;
+            $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
+            $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result) <> 0) {
