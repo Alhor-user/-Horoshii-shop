@@ -30,7 +30,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>';
+                        </a>
+                    </div>';
                 }; 
                 if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
                     echo '<a href="#modal-example-6" onclick="NewCategory()" uk-toggle>
