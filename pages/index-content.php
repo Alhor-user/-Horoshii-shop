@@ -8,11 +8,6 @@
                 
             <?php // Добавление карточек с категориями из БД
 
-                //Проверка работы сессии
-                // if (hash('md5', $_SESSION["login"]) == $_SESSION["key"]) {
-                //     echo "Работает!!!";
-                // };
-
                 $sql = "SELECT * FROM `categories` WHERE `Status`='Active'";
                 $result = mysqli_query($link, $sql);
                 while ($row = mysqli_fetch_array($result)) {
