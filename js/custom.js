@@ -33,7 +33,7 @@ function DeleteItem(id, name) {
     document.getElementById('deleteItemName').setAttribute('value', name);
 }
 
-function EditItem(itemName, itemDescription, itemPrice, itemCount, itemTagNew, itemTagStock, itemID) {
+function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory, itemTagNew, itemTagStock, itemID) {
     //styleTag.removeAttribute('scope');
     document.getElementById('edititemform').reset();
     console.log(itemName);
