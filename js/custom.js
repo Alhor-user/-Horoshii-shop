@@ -18,6 +18,7 @@ function EditCategory(category, name) {
 }
 
 function NewCategory(category, name) {
+    document.getElementById('newcategoryform').reset();
     if(document.getElementById('prev2')!= null) {
         var image_x = document.getElementById('prev2');
         image_x.parentNode.removeChild(image_x);
@@ -44,6 +45,7 @@ function EditItem(category, name) {
 }
 
 function NewItem(category, name) {
+    document.getElementById('newitemform').reset();
     if(document.getElementById('prev4')!= null) {
         var image_x = document.getElementById('prev4');
         image_x.parentNode.removeChild(image_x);
