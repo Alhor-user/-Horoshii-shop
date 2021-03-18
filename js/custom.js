@@ -29,6 +29,7 @@ function EditItem(category, name) {
 }
 
 function handleFileSelect1(evt) {
+    document.getElementById('prev1').setAttribute('src', '');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -41,7 +42,7 @@ function handleFileSelect1(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev1" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output1').insertBefore(span, null);
         };
     })(f);
@@ -50,6 +51,7 @@ function handleFileSelect1(evt) {
 }
 
 function handleFileSelect2(evt) {
+    document.getElementById('prev2').setAttribute('src', '');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -62,7 +64,7 @@ function handleFileSelect2(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev2" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output2').insertBefore(span, null);
         };
     })(f);
@@ -71,6 +73,7 @@ function handleFileSelect2(evt) {
 }
 
 function handleFileSelect3(evt) {
+    document.getElementById('prev3').setAttribute('src', '');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -83,7 +86,7 @@ function handleFileSelect3(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev3" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output3').insertBefore(span, null);
         };
     })(f);
@@ -92,6 +95,7 @@ function handleFileSelect3(evt) {
 }
 
 function handleFileSelect4(evt) {
+    document.getElementById('prev4').setAttribute('src', '');
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
@@ -104,7 +108,7 @@ function handleFileSelect4(evt) {
         return function(e) {
             // Render thumbnail.
             var span = document.createElement('span');
-            span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+            span.innerHTML = ['<img id="prev4" class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
             document.getElementById('output4').insertBefore(span, null);
         };
     })(f);
