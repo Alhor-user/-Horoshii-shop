@@ -68,8 +68,8 @@
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
 
-            if ($_POST['newprice']<>0) $price = ", `Price`='".$_POST['newprice']."'"; else $price = "";
-            if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = "";
+            if ($_POST['newprice']<>0) $price = ", `Price`='".$_POST['newprice']."'"; else $price = ", `Price`=NULL";
+            if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = ", `Count`=NULL";
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if (mysqli_num_rows($result) <> 0) {
