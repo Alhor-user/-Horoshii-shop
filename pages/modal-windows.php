@@ -113,8 +113,8 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="editCategoryName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'"></i> Название категории:</p>
-            <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" tooltip="Разрешенные символы - латинский алфавит, цифры и \'-\'" required>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
+            <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
             <input type="hidden" name="type" value="edit-category">
             
@@ -147,8 +147,8 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="newCategoryName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'"></i> Название категории:</p>
-            <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" tooltip="Разрешенные символы - латинский алфавит, цифры и \'-\'" value="" required>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
+            <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
             <input type="hidden" name="type" value="new-category">
             
@@ -208,8 +208,8 @@ echo'
             <input id="editItemDescription" class="uk-input" name="newdescription" value="">
             
             <!-- Ввод Price -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'"></i> Цена:</p>
-            <input id="editItemPrice" class="uk-input" name="newprice" pattern="^(\d+\,\d{2})|^(\d+\,\d{1})|^(\d+)$" tooltip="Разрешенные символы - цифры и \',\'" value="">
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'. Разрешенные символы - цифры и \',\'"></i> Цена:</p>
+            <input id="editItemPrice" class="uk-input" name="newprice" pattern="\d+(,\d{2})?" value="">
 
             <!-- Ввод Count -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
@@ -275,8 +275,8 @@ echo'
             <input id="newItemDescription" class="uk-input" name="newdescription" value="">
             
             <!-- Ввод Price -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'"></i> Цена:</p>
-            <input id="newItemPrice" class="uk-input" name="newprice" pattern="^(\d+\,\d{2})|^(\d+\,\d{1})|^(\d+)$" tooltip="Разрешенные символы - цифры и \',\'" value="">
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'. Разрешенные символы - цифры и \',\'"></i> Цена:</p>
+            <input id="newItemPrice" class="uk-input" name="newprice" pattern="\d+(,\d{2})?" value="">
 
             <!-- Ввод Count -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
