@@ -5,7 +5,7 @@
         
         
         if ($_POST['type']=='delete-category'){
-            $sql = "DELETE FROM `categories` WHERE `Category`= '". $_POST['category'] ."'";
+            $sql = "DELETE FROM `categories` WHERE `Category`= '". mysqli_real_escape_string($link, $_POST['category']) ."'";
             $result = mysqli_query($link, $sql);
 
             if ($result == false) {
@@ -15,7 +15,7 @@
 
 
         if ($_POST['type']=='delete-item'){
-            $sql = "DELETE FROM `production` WHERE `ID`= '". $_POST['ID'] ."'";
+            $sql = "DELETE FROM `production` WHERE `ID`= '". mysqli_real_escape_string($link, $_POST['ID']) ."'";
             $result = mysqli_query($link, $sql);
 
             if ($result == false) {

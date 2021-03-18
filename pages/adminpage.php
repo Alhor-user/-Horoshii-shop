@@ -6,7 +6,7 @@
     if ($_POST['sumbit'] == 'true') {
         $passhash = hash('md5', hash('md5', $_POST['pass']));
         //Ищем юзера с введенным логином и хэшем пароля
-        $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "' AND `Login`='" . $_POST['Login'] . "'";
+        $sql = "SELECT * FROM `users` WHERE `Password`='" . $passhash . "' AND `Login`='" . mysqli_real_escape_string($link, $_POST['Login']) . "'";
         $result = mysqli_query($link, $sql);
         $row = mysqli_fetch_array($result);
         //Если такого юзера нет - ошибка, иначе - открываем сессию и редиректим на главную
