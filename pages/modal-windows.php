@@ -110,7 +110,7 @@ echo'
                 </div>
             </div>
 
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="editCategoryName" class="uk-input" name="newname" value="" required>
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
@@ -144,7 +144,7 @@ echo'
                 </div>
             </div>
 
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="newCategoryName" class="uk-input" name="newname" value="" required>
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке и должна быть написана на английском, например \'ikra\'"></i> Название категории:</p>
@@ -208,24 +208,23 @@ echo'
             </div>
 
             <!-- Ввод Name -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра трески\'"></i> Название товара:</p>
             <input id="editItemName" class="uk-input" name="newname" value="" required>
             
             <!-- Ввод Description -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Описание отображается на сайте"></i> Описание товара:</p>
             <input id="editItemName" class="uk-input" name="newdescription" value="" required>
             
             <!-- Ввод Price -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если цена не прописана, то вместо нее будет надпись \'не указана\'"></i> Цена:</p>
             <input id="editItemName" class="uk-input" name="newprice" value="" required>
 
             <!-- Ввод Count -->
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
             <input id="editItemName" class="uk-input" name="newcount" value="" required>
             
             <!-- Выбор Tags -->
-            
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Имя отображается на сайте, например \'Икра\'"></i> Имя категории:</p>
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
             <div class="uk-margin-small-left">
                 <label><input class="uk-checkbox" type="checkbox"> Новинка</label>
             </div>
@@ -237,12 +236,12 @@ echo'
             <input type="hidden" name="type" value="id">
 
             <!-- Категория (для скрипта обработки данных) -->
-            <input type="hidden" name="type" value="edit-category">
+            <input type="hidden" name="type" value="edit-item">
 
             <!-- Кнопки отправки формы -->
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button id="editItemOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
+                <button class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
             </p>
         </form>
     </div> 
