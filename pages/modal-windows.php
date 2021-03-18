@@ -225,13 +225,17 @@ echo'
             
             <!-- Выбор Tags -->
             <div class="uk-margin">
-                <select class="uk-select" multiple>
-                    <option>Опция 01</option>
-                    <option>Опция 02</option>
-                    <option>Опция 03</option>
-                    <option>Опция 04</option>
-                    <option>Опция 05</option>
-                </select>
+                <label class="uk-form-label" for="form-stacked-select">Селект</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-stacked-select" multiple>
+                        <option label="Выбор тегов" disabled>Опция 02</option>
+                        <option>Опция 01</option>
+                        <option>Опция 02</option>
+                        <option>Опция 02</option>
+                        <option>Опция 02</option>
+                        <option>Опция 02</option>
+                    </select>
+                </div>
             </div>
 
             <!-- ID -->
