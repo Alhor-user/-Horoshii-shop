@@ -25,9 +25,11 @@
     $start = ($page-1)*$page_setting['limit'];
 
 
-    $sql = "SELECT count(*) AS count FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "'";
-    $res = mysqli_query($link, $sql);
+    $res = $link->query("SELECT count(*) AS count FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "'");
     $row = $res->fetch(PDO::FETCH_ASSOC);
+    // $sql = ;
+    // $res = mysqli_query($link, $sql);
+    // $row = $res->fetch(PDO::FETCH_ASSOC);
     $page_count = ceil($row['count'] / $page_setting['limit']); // кол-во страниц
     $page_left = $page - $page_setting['show']; // находим левую границу
     $page_right = $page + $page_setting['show']; // находим правую границу
