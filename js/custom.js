@@ -33,18 +33,27 @@ function DeleteItem(id, name) {
     document.getElementById('deleteItemName').setAttribute('value', name);
 }
 
-function EditItem(category, name) {
+function EditItem(itemName, itemDescription, itemPrice, itemCount, itemTagNew, itemTagStock, itemID) {
+    //styleTag.removeAttribute('scope');
     document.getElementById('edititemform').reset();
-    document.getElementById('editItemCategory').setAttribute('value', category);
-    document.getElementById('editItemOldCategory').setAttribute('value', category);
-    document.getElementById('editItemName').setAttribute('value', name);
+    document.getElementById('editItemName').setAttribute('value', itemName);
+    document.getElementById('editItemDescription').setAttribute('value', itemDescription);
+    document.getElementById('editItemPrice').setAttribute('value', itemPrice);
+    document.getElementById('editItemCount').setAttribute('value', itemCount);
+    document.getElementById('editItemCategory').setAttribute('value', itemCategory);
+    
+    document.getElementById('editItemTagNew').setAttribute('value', itemTagNew);!!!!!!!!!!!!!!!!!!!!!!!
+    document.getElementById('editItemTagStock').setAttribute('value', itemTagStock);!!!!!!!!!!!!!!!!!!!
+    
+    document.getElementById('editItemID').setAttribute('value', itemID);
+    
     if(document.getElementById('prev3')!= null) {
         var image_x = document.getElementById('prev3');
         image_x.parentNode.removeChild(image_x);
     };
 }
 
-function NewItem(category, name) {
+function NewItem() {
     document.getElementById('newitemform').reset();
     if(document.getElementById('prev4')!= null) {
         var image_x = document.getElementById('prev4');

@@ -226,14 +226,17 @@ echo'
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
             <div class="uk-margin-small-left">
-                <label><input id="editItemTagNew" class="uk-checkbox" type="checkbox" checked="false"> Новинка</label>
+                <label><input id="editItemTagNew" class="uk-checkbox" type="checkbox" name="newtagnew" checked="false"> Новинка</label>
             </div>
             <div class="uk-margin-small-left">
-                <label><input id="editItemTagStock" class="uk-checkbox" type="checkbox" checked="true"> Нет в наличии</label>
+                <label><input id="editItemTagStock" class="uk-checkbox" type="checkbox" name="newtagstock" checked="true"> Нет в наличии</label>
             </div>
 
             <!-- ID -->
-            <input id="editItemID" type="hidden" name="type" value="">
+            <input id="editItemID" type="hidden" name="id" value="">
+
+            <!-- Category -->
+            <input id="editItemCategory" type="hidden" name="newcategory" value="">
 
             <!-- Категория (для скрипта обработки данных) -->
             <input type="hidden" name="type" value="edit-item">
