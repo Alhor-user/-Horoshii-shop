@@ -28,7 +28,7 @@ function EditItem(category, name) {
     document.getElementById('editItemName').setAttribute('value', name);
 }
 
-function handleFileSelect(evt, windid) {
+function handleFileSelect(windid, evt) {
     var file = evt.target.files; // FileList object
     var f = file[0];
     // Only process image files.
