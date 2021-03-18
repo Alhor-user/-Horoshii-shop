@@ -19,3 +19,7 @@
     </div>
 </body>
 </html>
+
+<script>
+document.getElementById('file').addEventListener('change', handleFileSelect, false);
+</script>

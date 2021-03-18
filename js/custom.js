@@ -48,4 +48,3 @@ function handleFileSelect(evt) {
     // Read in the image file as a data URL.
     reader.readAsDataURL(f);
 }
-document.getElementById('file').addEventListener('change', handleFileSelect, false);
