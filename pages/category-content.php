@@ -1,6 +1,31 @@
 <?php
+    // Поверка, есть ли GET запрос
+    if (isset($_GET['pageno'])) {
+        // Если да то переменной $pageno присваиваем его
+        $pageno = $_GET['pageno'];
+    } else { // Иначе
+        // Присваиваем $pageno один
+        $pageno = 1;
+    }
+    // Назначаем количество данных на одной странице
+    $size_page = 5;
+    // Вычисляем с какого объекта начать выводить
+    $offset = ($pageno-1) * $size_page;
+
+
+    // SQL запрос для получения количества элементов
+    $count_sql = "SELECT COUNT(*) FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "'";
+    $result = mysqli_query($link, $count_sql);
+    // Количество подходящих строк в БД
+    $total_rows = mysqli_fetch_array($result)[0];
+    // Вычисляем количество страниц
+    $total_pages = ceil($total_rows / $size_page);
+
+
+
+
     //echo 'Привет, ' . $category . '! <br>';
-    $sql = "SELECT * FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "' ORDER BY `Priority`, `Name`";
+    $sql = "SELECT * FROM `production` WHERE `Category`='" . mysqli_real_escape_string($link, $category) . "' ORDER BY `Priority`, `Name` LIMIT $offset, $size_page";
     $result = mysqli_query($link, $sql);
 ?>
 
@@ -71,4 +96,30 @@
     <div class="uk-width-1-1" style="height: 50px;">
     </div>
 
+
+
+
+    <ul class="uk-pagination uk-flex-center" uk-margin>
+        <li><a href="?page=1"><span uk-pagination-previous></span><span uk-pagination-previous></span></a></li>
+        <li><a href="#">1</a></li>
+        <li class="uk-disabled"><span>...</span></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="uk-active"><span>7</span></li>
+        <li><a href="#">8</a></li>
+        <li><a href="?page=<?php echo $total_pages; ?>"><span uk-pagination-next></span><span uk-pagination-next></span></a></li>
+    </ul>
+
+
+    <ul class="pagination">
+        <!-- <li><a href="?page=1">First</a></li> -->
+        <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
+            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
+        </li>
+        <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+            <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Next</a>
+        </li>
+        <!-- <li><a href="?page=<?php echo $total_pages; ?>">Last</a></li> -->
+    </ul>
+    
 </div>
