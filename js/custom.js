@@ -1,15 +1,15 @@
 function DeleteCategory(category, name) {
-    console.log(category);
-    console.log(name);
+    // console.log(category);
+    // console.log(name);
     document.getElementById('deleteategoryform').reset();
     document.getElementById('deleteCategoryCategory').setAttribute('value', category);
     document.getElementById('deleteCategoryName').setAttribute('value', name);
 }
 
 function EditCategory(category, name, priority) {
-    console.log(category);
-    console.log(name);
-    console.log(priority);
+    // console.log(category);
+    // console.log(name);
+    // console.log(priority);
     document.getElementById('editcategoryform').reset();
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
@@ -30,8 +30,8 @@ function NewCategory() {
 }
 
 function DeleteItem(id, name) {
-    console.log(id);
-    console.log(name);
+    // console.log(id);
+    // console.log(name);
     document.getElementById('deleteitemform').reset();
     document.getElementById('deleteItemID').setAttribute('value', id);
     document.getElementById('deleteItemName').setAttribute('value', name);
