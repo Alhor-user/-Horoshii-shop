@@ -1,4 +1,4 @@
-<footer class="uk-section uk-section-secondary uk-section-xsmall" style="background-image: url(../img/header-wave2.jpg); background-size: 100%;">
+<footer class="uk-section uk-section-secondary uk-section-xsmall" style="background-image: url(../img/header-wave2.jpg); background-size: 100%; margin-top: 30px;">
     <div uk-grid class="uk-width-1-1 uk-grid-collapse uk-child-width-expand">
         <div class="uk-width-1-4">
             <a href="../"><img src="../img/logo.png" alt="Logo" class="img-logo" style="margin: 0 0 0 25px;"></a>
