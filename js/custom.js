@@ -12,6 +12,7 @@ function EditCategory(category, name, priority) {
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
     document.getElementById('editCategoryPriority').setAttribute('value', priority);
+    console.log(priority);
     if(document.getElementById('prev1')!= null) {
         var image_x = document.getElementById('prev1');
         image_x.parentNode.removeChild(image_x);
