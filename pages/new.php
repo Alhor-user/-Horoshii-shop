@@ -20,7 +20,7 @@
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if ((mysqli_num_rows($result) == 0) or ($_POST['oldcategory']==$_POST['newcategory'] )) {
-                $sql = "INSERT INTO `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Status`='Active', `Prioriry`='". mysqli_real_escape_string($link, $_POST['newpriority']) ."'";
+                $sql = "INSERT INTO `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Status`='Active', `Priority`=". mysqli_real_escape_string($link, $_POST['newpriority']) ."";
                 echo $sql;
                 $result = mysqli_query($link, $sql);
 
@@ -51,7 +51,7 @@
             if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = ", `Count`=NULL";
 
 
-            $sql = "INSERT INTO `production` SET `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Description`='". mysqli_real_escape_string($link, $_POST['newdescription']) ."', `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'". mysqli_real_escape_string($link, $price) . mysqli_real_escape_string($link, $count) .", `Is-new`='". mysqli_real_escape_string($link, $tagnew) ."', `Is-no-stock`='". mysqli_real_escape_string($link, $tagstock) ."', `Prioriry`='". mysqli_real_escape_string($link, $_POST['newpriority']) ."'";
+            $sql = "INSERT INTO `production` SET `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Description`='". mysqli_real_escape_string($link, $_POST['newdescription']) ."', `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'". mysqli_real_escape_string($link, $price) . mysqli_real_escape_string($link, $count) .", `Is-new`='". mysqli_real_escape_string($link, $tagnew) ."', `Is-no-stock`='". mysqli_real_escape_string($link, $tagstock) ."', `Priority`=". mysqli_real_escape_string($link, $_POST['newpriority']) ."";
             echo $sql;
             $result = mysqli_query($link, $sql);
 
