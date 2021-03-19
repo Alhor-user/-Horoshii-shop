@@ -96,7 +96,7 @@
     <div class="uk-width-1-1" style="height: 30px;">
     </div>
 
-    <div style="width: 100%;" <?php if ($total_rows==0) echo 'hidden="true"'; ?>>
+    <div style="width: 100%;" <?php if ($total_pages>=1) echo 'hidden="true"'; ?>>
         <ul class="uk-pagination uk-flex-center uk-margin-small-topuk-margin-medium-bottom" uk-margin style="font-size: 16pt;">
             
             <!-- Предыдущая страница -->
