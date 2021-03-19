@@ -67,7 +67,7 @@
 
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
-            $priority = ($_POST['newpriority']=='' ? $_POST['newpriority'] : 99);
+            $priority = ($_POST['newpriority']=='' ? 99 : $_POST['newpriority']);
 
             if ($_POST['newprice']<>0) $price = ", `Price`='".mysqli_real_escape_string($link, $_POST['newprice'])."'"; else $price = ", `Price`=NULL";
             if ($_POST['newcount']<>0) $count = ", `Count`='".mysqli_real_escape_string($link, $_POST['newcount'])."'"; else $count = ", `Count`=NULL";
