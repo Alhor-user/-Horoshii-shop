@@ -94,7 +94,7 @@
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
-        <ul class="uk-pagination uk-flex-center" uk-margin>
+        <ul class="uk-pagination uk-flex-center" uk-margin style="font-size: 20pt;">
             <li><a href="?page=1"><span uk-pagination-previous></span><span uk-pagination-previous></span></a></li>
             <li><a href="#">1</a></li>
             <li class="uk-disabled"><span>...</span></li>
