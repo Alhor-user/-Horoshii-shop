@@ -95,14 +95,33 @@
 
     <div class="uk-width-1-1" style="height: 50px;">
         <ul class="uk-pagination uk-flex-center uk-margin-small-top" uk-margin style="font-size: 16pt;">
-            <li><a href="?page=1"><span uk-pagination-previous></span><span uk-pagination-previous></span></a></li>
-            <li><a href="#">1</a></li>
+            
+            Предыдущая страница
+            <li><a href=""><span uk-pagination-previous></span></a></li>
+            
+            Первая страница
+            <li><a href="#?page=1">1</a></li>
+            
+            Многоточие до
             <li class="uk-disabled"><span>...</span></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li class="uk-active"><span>7</span></li>
-            <li><a href="#">8</a></li>
-            <li><a href="?page=<?php echo $total_pages; ?>"><span uk-pagination-next></span><span uk-pagination-next></span></a></li>
+            
+            Предыдущая страница
+            <li><a href=""></a></li>
+            
+            Настоящая страница
+            <li class="uk-active"><a href="#">6</a></li>
+            
+            Следующая страница
+            <li><a href=""></a></li>
+            
+            Многоточие после
+            <li class="uk-disabled"><span>...</span></li>
+            
+            Последняя страница
+            <li><a href="?page=<?php echo $total_pages; ?>"></a></li>
+
+            Следующая страница
+            <li><a><span uk-pagination-next></span></a></li>
         </ul>
     </div>
 
