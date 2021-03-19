@@ -11,7 +11,7 @@ function EditCategory(category, name, priority) {
     // console.log(name);
     // console.log(priority);
     document.getElementById('editcategoryform').reset();
-    document.getElementById('editCategoryCategory').setAttribute('value', category);
+    //document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
     document.getElementById('editCategoryPriority').setAttribute('value', priority);

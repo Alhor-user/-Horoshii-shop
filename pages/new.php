@@ -16,12 +16,12 @@
             
             $priority = ($_POST['newpriority']=='' ? 127 : $_POST['newpriority']);
             // Ищем категории с таким же названием 
-            $sql = "SELECT * FROM `categories` WHERE `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'";
+            $sql = "SELECT * FROM `categories` WHERE `Category`='". translit($_POST['newname']) ."'";
             $result = mysqli_query($link, $sql);
 
             // Обновляем строку, если до этого не нашли таких же категорий
-            if ((mysqli_num_rows($result) == 0) or ($_POST['oldcategory']==$_POST['newcategory'] )) {
-                $sql = "INSERT INTO `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Status`='Active', `Priority`=". mysqli_real_escape_string($link, $priority) ."";
+            if (mysqli_num_rows($result) == 0) {
+                $sql = "INSERT INTO `categories` SET `Category`='". translit($_POST['newname']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Status`='Active', `Priority`=". mysqli_real_escape_string($link, $priority) ."";
                 //echo $sql;
                 $result = mysqli_query($link, $sql);
 

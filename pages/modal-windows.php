@@ -113,8 +113,8 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="editCategoryName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
-            <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
+            <!-- <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
+            <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required> -->
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
             <input id="editCategoryPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="">
@@ -150,8 +150,8 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Название отображается на сайте, например \'Икра\'"></i> Название категории:</p>
             <input id="newCategoryName" class="uk-input" name="newname" value="" required>
             
-            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
-            <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
+            <!-- <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
+            <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required> -->
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
             <input id="newCategoryPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="127">
@@ -160,7 +160,7 @@ echo'
             
             <p class="uk-text-center uk-margin-medium-top">
                 <button class="uk-button uk-button-danger uk-modal-close" type="button">Отмена</button>
-                <button id="newCategoryOldCategory" class="uk-button uk-button-primary" type="submit" name="oldcategory" value="">Сохранить</button>
+                <button id="newCategoryOldCategory" class="uk-button uk-button-primary" type="submit">Сохранить</button>
             </p>
         </form>
     </div> 
