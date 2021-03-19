@@ -30,13 +30,14 @@
             };
             
 
+            $priority = ($_POST['newpriority']=='' ? 127 : $_POST['newpriority']);
             // Ищем категории с таким же названием 
             $sql = "SELECT * FROM `categories` WHERE `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'";
             $result = mysqli_query($link, $sql);
 
             // Обновляем строку, если до этого не нашли таких же категорий
             if ((mysqli_num_rows($result) == 0) or ($_POST['oldcategory']==$_POST['newcategory'] )) {
-                $sql = "UPDATE `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Priority`=". mysqli_real_escape_string($link, $_POST['newpriority']) ." WHERE `Category`='". mysqli_real_escape_string($link, $_POST['oldcategory']) ."'";
+                $sql = "UPDATE `categories` SET `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Priority`=". mysqli_real_escape_string($link, $priority) ." WHERE `Category`='". mysqli_real_escape_string($link, $_POST['oldcategory']) ."'";
                 //echo $sql;
                 $result = mysqli_query($link, $sql);
 
@@ -67,7 +68,7 @@
 
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
-            $priority = ($_POST['newpriority']=='' ? 99 : $_POST['newpriority']);
+            $priority = ($_POST['newpriority']=='' ? 127 : $_POST['newpriority']);
 
             if ($_POST['newprice']<>0) $price = ", `Price`='".mysqli_real_escape_string($link, $_POST['newprice'])."'"; else $price = ", `Price`=NULL";
             if ($_POST['newcount']<>0) $count = ", `Count`='".mysqli_real_escape_string($link, $_POST['newcount'])."'"; else $count = ", `Count`=NULL";
