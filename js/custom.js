@@ -7,14 +7,14 @@ function DeleteCategory(category, name) {
 }
 
 function EditCategory(category, name, priority) {
+    console.log(category);
+    console.log(name);
+    console.log(priority);
     document.getElementById('editcategoryform').reset();
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
     document.getElementById('editCategoryPriority').setAttribute('value', priority);
-    console.log(category);
-    console.log(name);
-    console.log(priority);
     if(document.getElementById('prev1')!= null) {
         var image_x = document.getElementById('prev1');
         image_x.parentNode.removeChild(image_x);
