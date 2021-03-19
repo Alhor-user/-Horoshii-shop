@@ -117,7 +117,7 @@ echo'
             <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
-            <input id="editCategoryPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="">
+            <input id="editCategoryPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="">
 
             <input type="hidden" name="type" value="edit-category">
             
@@ -154,7 +154,7 @@ echo'
             <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
-            <input id="newCategoryPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="99">
+            <input id="newCategoryPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="127">
 
             <input type="hidden" name="type" value="new-category">
             
@@ -222,7 +222,7 @@ echo'
             <input id="editItemCount" class="uk-input" name="newcount" value="">
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются товары с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
-            <input id="editItemPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="">
+            <input id="editItemPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="">
 
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
@@ -292,7 +292,7 @@ echo'
             <input id="newItemCount" class="uk-input" name="newcount" value="">
             
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-127"></i> Приоритет:</p>
-            <input id="newItemPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="99">
+            <input id="newItemPriority" class="uk-input" name="newpriority" pattern="\b(1[0-1][0-9]|1[0-2][0-7]|[1-9][0-9]|[0-9])\b" value="127">
 
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
