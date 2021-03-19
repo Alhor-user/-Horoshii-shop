@@ -106,7 +106,7 @@
             <?php if (($page-2)>0) echo'<li><a href="?page=1">1</a></li>';?>
             
             <!-- Многоточие до -->
-            <?php if (($page-3)>=0) echo'<li class="uk-disabled"><span>...</span></li>';?>
+            <?php if (($page-3)>0) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
             <!-- Предыдущая страница -->
             <?php if ($page>1) echo'<li><a href="?page=', $page-1, '">', $page-1, '</a></li>';?>
@@ -121,7 +121,7 @@
             <?php if (($page+3)<=$total_pages) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
             <!-- Последняя страница -->
-            <?php if (($page+2)<$total_pages) echo'<li><a href="?page=', $total_pages, '">', $total_pages, '</a></li>';?>
+            <?php if (($page+2)<=$total_pages) echo'<li><a href="?page=', $total_pages, '">', $total_pages, '</a></li>';?>
 
             <!-- Следующая страница -->
             <?php if ($page<$total_pages) echo'<li><a href="?page=', $page+1, '"><span uk-pagination-next></span></a></li>';?>
