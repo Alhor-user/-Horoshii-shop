@@ -47,11 +47,11 @@
             $tagstock = (isset($_POST['newtagstock']) ? 1 : 0);
             $tagnew = (isset($_POST['newtagnew']) ? 1 : 0);
 
-            if ($_POST['newprice']<>0) $price = ", `Price`='".$_POST['newprice']."'"; else $price = ", `Price`=NULL";
-            if ($_POST['newcount']<>0) $count = ", `Count`='".$_POST['newcount']."'"; else $count = ", `Count`=NULL";
+            if ($_POST['newprice']<>0) $price = ", `Price`='".mysqli_real_escape_string($link, $_POST['newprice'])."'"; else $price = ", `Price`=NULL";
+            if ($_POST['newcount']<>0) $count = ", `Count`='".mysqli_real_escape_string($link, $_POST['newcount'])."'"; else $count = ", `Count`=NULL";
 
 
-            $sql = "INSERT INTO `production` SET `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Description`='". mysqli_real_escape_string($link, $_POST['newdescription']) ."', `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'". mysqli_real_escape_string($link, $price) . mysqli_real_escape_string($link, $count) .", `Is-new`='". mysqli_real_escape_string($link, $tagnew) ."', `Is-no-stock`='". mysqli_real_escape_string($link, $tagstock) ."', `Priority`=". mysqli_real_escape_string($link, $_POST['newpriority']) ."";
+            $sql = "INSERT INTO `production` SET `Image`='". mysqli_real_escape_string($link, $imgsrc) ."', `Name`='". mysqli_real_escape_string($link, $_POST['newname']) ."', `Description`='". mysqli_real_escape_string($link, $_POST['newdescription']) ."', `Category`='". mysqli_real_escape_string($link, $_POST['newcategory']) ."'". $price . $count .", `Is-new`='". mysqli_real_escape_string($link, $tagnew) ."', `Is-no-stock`='". mysqli_real_escape_string($link, $tagstock) ."', `Priority`=". mysqli_real_escape_string($link, $_POST['newpriority']) ."";
             echo $sql;
             $result = mysqli_query($link, $sql);
 
