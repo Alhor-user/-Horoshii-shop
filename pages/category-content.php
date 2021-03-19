@@ -94,7 +94,7 @@
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
-        <ul class="uk-pagination uk-flex-center" uk-margin style="font-size: 16pt;">
+        <ul class="uk-pagination uk-flex-center uk-margin-small-top" uk-margin style="font-size: 16pt;">
             <li><a href="?page=1"><span uk-pagination-previous></span><span uk-pagination-previous></span></a></li>
             <li><a href="#">1</a></li>
             <li class="uk-disabled"><span>...</span></li>
@@ -108,7 +108,7 @@
 
 
 
-    <ul class="pagination uk-margin-small-top">
+    <ul class="pagination">
         <!-- <li><a href="?page=1">First</a></li> -->
         <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
             <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
