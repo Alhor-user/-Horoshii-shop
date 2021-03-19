@@ -6,11 +6,12 @@ function DeleteCategory(category, name) {
     document.getElementById('deleteCategoryName').setAttribute('value', name);
 }
 
-function EditCategory(category, name) {
+function EditCategory(category, name, priority) {
     document.getElementById('editcategoryform').reset();
     document.getElementById('editCategoryCategory').setAttribute('value', category);
     document.getElementById('editCategoryOldCategory').setAttribute('value', category);
     document.getElementById('editCategoryName').setAttribute('value', name);
+    document.getElementById('editCategoryPriority').setAttribute('value', priority);
     if(document.getElementById('prev1')!= null) {
         var image_x = document.getElementById('prev1');
         image_x.parentNode.removeChild(image_x);
@@ -33,7 +34,7 @@ function DeleteItem(id, name) {
     document.getElementById('deleteItemName').setAttribute('value', name);
 }
 
-function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory, itemTagNew, itemTagStock, itemID) {
+function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory, itemTagNew, itemTagStock, itemID, priority) {
     //styleTag.removeAttribute('scope');
     document.getElementById('edititemform').reset();
     document.getElementById('editItemName').setAttribute('value', itemName);
@@ -41,7 +42,8 @@ function EditItem(itemName, itemDescription, itemPrice, itemCount, itemCategory,
     document.getElementById('editItemPrice').setAttribute('value', itemPrice);
     document.getElementById('editItemCount').setAttribute('value', itemCount);
     document.getElementById('editItemCategory').setAttribute('value', itemCategory);
-    
+    document.getElementById('editItemPriority').setAttribute('value', priority);
+
     if (itemTagNew == 1) document.getElementById('editItemTagNew').setAttribute('checked', 'checked'); else document.getElementById('editItemTagNew').removeAttribute('checked');
     if (itemTagStock == 1) document.getElementById('editItemTagStock').setAttribute('checked', 'checked'); else document.getElementById('editItemTagStock').removeAttribute('checked');
     

@@ -116,6 +116,9 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
             <input id="editCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-99"></i> Приоритет:</p>
+            <input id="editCategoryPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="">
+
             <input type="hidden" name="type" value="edit-category">
             
             <p class="uk-text-center uk-margin-medium-top">
@@ -150,6 +153,9 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Категория отображается в адресной строке, например \'ikra\'. Разрешенные символы - латинский алфавит, цифры и \'-\'"></i> Название категории:</p>
             <input id="newCategoryCategory" class="uk-input" name="newcategory" pattern="^[a-zA-Z0-9-]+$" value="" required>
             
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-99"></i> Приоритет:</p>
+            <input id="newCategoryPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="99">
+
             <input type="hidden" name="type" value="new-category">
             
             <p class="uk-text-center uk-margin-medium-top">
@@ -215,6 +221,9 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
             <input id="editItemCount" class="uk-input" name="newcount" value="">
             
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются товары с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-99"></i> Приоритет:</p>
+            <input id="editItemPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="">
+
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
             <div class="uk-margin-small-left">
@@ -282,6 +291,9 @@ echo'
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если вес не прописан, то вместо него будет надпись \'не указан\'"></i> Вес:</p>
             <input id="newItemCount" class="uk-input" name="newcount" value="">
             
+            <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Первыми на сайте отображаются категории с меньшей цифрой в приоритете. Если приоритет одинаковый - идут в алфавитном порядке. Разрешенные символы - числа 0-99"></i> Приоритет:</p>
+            <input id="newItemPriority" class="uk-input" name="newpriority" pattern="^[0-9]+$" value="99">
+
             <!-- Выбор Tags -->
             <p class="uk-margin-medium-top" style="margin-bottom: 10px;"><i class="fa fa-info-circle" style="color: black;" uk-tooltip="Если тег указан, то он отобразится сверху на товаре"></i> Теги:</p>
             <div class="uk-margin-small-left">
