@@ -21,7 +21,7 @@ function EditCategory(category, name, priority) {
     };
 }
 
-function NewCategory(category, name) {
+function NewCategory() {
     document.getElementById('newcategoryform').reset();
     if(document.getElementById('prev2')!= null) {
         var image_x = document.getElementById('prev2');
