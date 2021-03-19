@@ -96,46 +96,32 @@
     <div class="uk-width-1-1" style="height: 50px;">
         <ul class="uk-pagination uk-flex-center uk-margin-small-top" uk-margin style="font-size: 16pt;">
             
-            Предыдущая страница
-            <li><a href=""><span uk-pagination-previous></span></a></li>
+            <!-- Предыдущая страница -->
+            <?php if ($page>1) echo'<li><a href="?page=', $page-1, '"><span uk-pagination-previous></span></a></li>';?>
             
-            Первая страница
-            <li><a href="#?page=1">1</a></li>
+            <!-- Первая страница -->
+            <?php if (($page-2)>0) echo'<li><a href="?page=1">1</a></li>';?>
             
-            Многоточие до
-            <li class="uk-disabled"><span>...</span></li>
+            <!-- Многоточие до -->
+            <?php if (($page-3)>0) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
-            Предыдущая страница
-            <li><a href=""></a></li>
+            <!-- Предыдущая страница -->
+            <?php if ($page>1) echo'<li><a href="?page=', $page-1, '">', $page-1, '</a></li>';?>
             
-            Настоящая страница
-            <li class="uk-active"><a href="#">6</a></li>
+            <!-- Настоящая страница -->
+            <li class="uk-active"><a><?php echo $page; ?></a></li>
             
-            Следующая страница
-            <li><a href=""></a></li>
+            <!-- Следующая страница -->
+            <?php if ($page<$total_pages) echo'<li><a href="?page=', $page+1, '">', $page+1, '</a></li>';?>
             
-            Многоточие после
-            <li class="uk-disabled"><span>...</span></li>
+            <!-- Многоточие после -->
+            <?php if (($page+3)<$total_pages) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
-            Последняя страница
-            <li><a href="?page=<?php echo $total_pages; ?>"></a></li>
+            <!-- Последняя страница -->
+            <?php if (($page+2)<$total_pages) echo'<li><a href="?page=', $total_pages, '">', $total_pages, '</a></li>';?>
 
-            Следующая страница
-            <li><a><span uk-pagination-next></span></a></li>
+            <!-- Следующая страница -->
+            <?php if ($page<$total_pages) echo'<li><a href="?page=', $page+1, '"><span uk-pagination-next></span></a></li>';?>
         </ul>
     </div>
-
-
-
-    <ul class="pagination">
-        <!-- <li><a href="?page=1">First</a></li> -->
-        <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
-            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
-        </li>
-        <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
-            <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Next</a>
-        </li>
-        <!-- <li><a href="?page=<?php echo $total_pages; ?>">Last</a></li> -->
-    </ul>
-
 </div>
