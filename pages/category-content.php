@@ -108,7 +108,7 @@
 
 
 
-    <ul class="pagination">
+    <ul class="pagination uk-margin-small-top">
         <!-- <li><a href="?page=1">First</a></li> -->
         <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
             <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Prev</a>
