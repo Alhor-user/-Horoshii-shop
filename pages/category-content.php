@@ -94,7 +94,7 @@
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
-        <ul class="uk-pagination uk-flex-center uk-margin-small-top" uk-margin style="font-size: 16pt;">
+        <ul class="uk-pagination uk-flex-center uk-margin-small-topuk-margin-medium-bottom" uk-margin style="font-size: 16pt;">
             
             <!-- Предыдущая страница -->
             <?php if ($page>1) echo'<li><a href="?page=', $page-1, '"><span uk-pagination-previous></span></a></li>';?>
@@ -103,7 +103,7 @@
             <?php if (($page-2)>0) echo'<li><a href="?page=1">1</a></li>';?>
             
             <!-- Многоточие до -->
-            <?php if (($page-3)>0) echo'<li class="uk-disabled"><span>...</span></li>';?>
+            <?php if (($page-3)>=0) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
             <!-- Предыдущая страница -->
             <?php if ($page>1) echo'<li><a href="?page=', $page-1, '">', $page-1, '</a></li>';?>
@@ -115,7 +115,7 @@
             <?php if ($page<$total_pages) echo'<li><a href="?page=', $page+1, '">', $page+1, '</a></li>';?>
             
             <!-- Многоточие после -->
-            <?php if (($page+3)<$total_pages) echo'<li class="uk-disabled"><span>...</span></li>';?>
+            <?php if (($page+3)<=$total_pages) echo'<li class="uk-disabled"><span>...</span></li>';?>
             
             <!-- Последняя страница -->
             <?php if (($page+2)<$total_pages) echo'<li><a href="?page=', $total_pages, '">', $total_pages, '</a></li>';?>
