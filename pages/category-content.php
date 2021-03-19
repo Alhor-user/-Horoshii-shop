@@ -94,6 +94,9 @@
     </div>
 
     <div class="uk-width-1-1" style="height: 50px;">
+    </div>
+
+    <div>
         <ul class="uk-pagination uk-flex-center uk-margin-small-topuk-margin-medium-bottom" uk-margin style="font-size: 16pt;">
             
             <!-- Предыдущая страница -->
